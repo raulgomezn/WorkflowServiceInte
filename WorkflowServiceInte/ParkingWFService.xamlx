@@ -4,13 +4,13 @@
  xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
  xmlns:p="http://tempuri.org/"
  xmlns:p1="http://schemas.microsoft.com/netfx/2009/xaml/activities"
- xmlns:s="clr-namespace:System;assembly=mscorlib"
  xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
  xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
  xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
  xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
  xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
- xmlns:w="clr-namespace:WorkflowServiceInte;assembly=WorkflowServiceInte"
+ xmlns:wa="clr-namespace:WorkflowServiceInte.Activities;assembly=WorkflowServiceInte"
+ xmlns:we="clr-namespace:WorkflowServiceInte.Entities;assembly=WorkflowServiceInte"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <p1:Sequence DisplayName="Sequential Service" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <p1:TextExpression.Namespaces>
@@ -20,12 +20,14 @@
         <x:String>System.Data</x:String>
         <x:String>System.Linq</x:String>
         <x:String>System.Text</x:String>
+        <x:String>WorkflowServiceInte.Entities</x:String>
       </sco:Collection>
     </p1:TextExpression.Namespaces>
     <p1:TextExpression.References>
       <sco:Collection x:TypeArguments="p1:AssemblyReference" x:Name="__ReferenceID2">
         <p1:AssemblyReference>LightCaseClient</p1:AssemblyReference>
         <p1:AssemblyReference>Microsoft.CSharp</p1:AssemblyReference>
+        <p1:AssemblyReference>NLog</p1:AssemblyReference>
         <p1:AssemblyReference>System.Configuration</p1:AssemblyReference>
         <p1:AssemblyReference>System.Web.DynamicData</p1:AssemblyReference>
         <p1:AssemblyReference>System.Drawing</p1:AssemblyReference>
@@ -50,27 +52,12 @@
     </p1:TextExpression.References>
     <p1:Sequence.Variables>
       <p1:Variable x:TypeArguments="CorrelationHandle" Name="handle" />
-      <p1:Variable x:TypeArguments="x:String" Name="Url">
-        <p1:Variable.Default>
-          <mca:CSharpValue x:TypeArguments="x:String">string.Empty</mca:CSharpValue>
-        </p1:Variable.Default>
-      </p1:Variable>
-      <p1:Variable x:TypeArguments="x:String" Default="GET" Name="Method" />
-      <p1:Variable x:TypeArguments="x:String" Name="Body">
-        <p1:Variable.Default>
-          <mca:CSharpValue x:TypeArguments="x:String">string.Empty</mca:CSharpValue>
-        </p1:Variable.Default>
-      </p1:Variable>
-      <p1:Variable x:TypeArguments="x:Decimal" Name="latOrigin" />
-      <p1:Variable x:TypeArguments="x:Decimal" Name="lonOrigin" />
-      <p1:Variable x:TypeArguments="s:Decimal[]" Name="latDestination" />
-      <p1:Variable x:TypeArguments="s:Decimal[]" Name="lonDestination" />
-      <p1:Variable x:TypeArguments="s:String[]" Name="IdPlaces" />
       <p1:Variable x:TypeArguments="x:String" Name="AnswerW">
         <p1:Variable.Default>
           <mca:CSharpValue x:TypeArguments="x:String">string.Empty</mca:CSharpValue>
         </p1:Variable.Default>
       </p1:Variable>
+      <p1:Variable x:TypeArguments="we:WorkflowEntity" Name="Data" />
     </p1:Sequence.Variables>
     <Receive x:Name="__ReferenceID0" CanCreateInstance="True" DisplayName="ReceiveRequest" sap2010:WorkflowViewState.IdRef="Receive_1" OperationName="ExecuteW" ServiceContractName="p:IService">
       <Receive.CorrelationInitializers>
@@ -82,44 +69,19 @@
           </RequestReplyCorrelationInitializer.CorrelationHandle>
         </RequestReplyCorrelationInitializer>
       </Receive.CorrelationInitializers>
-      <ReceiveParametersContent>
-        <p1:OutArgument x:TypeArguments="x:String" x:Key="url">
-          <mca:CSharpReference x:TypeArguments="x:String">Url</mca:CSharpReference>
+      <ReceiveMessageContent DeclaredMessageType="we:WorkflowEntity">
+        <p1:OutArgument x:TypeArguments="we:WorkflowEntity">
+          <mca:CSharpReference x:TypeArguments="we:WorkflowEntity">Data</mca:CSharpReference>
         </p1:OutArgument>
-        <p1:OutArgument x:TypeArguments="x:String" x:Key="method">
-          <mca:CSharpReference x:TypeArguments="x:String">Method</mca:CSharpReference>
-        </p1:OutArgument>
-        <p1:OutArgument x:TypeArguments="x:String" x:Key="body">
-          <mca:CSharpReference x:TypeArguments="x:String">Body</mca:CSharpReference>
-        </p1:OutArgument>
-        <p1:OutArgument x:TypeArguments="x:Decimal" x:Key="latorigin">
-          <mca:CSharpReference x:TypeArguments="x:Decimal">latOrigin</mca:CSharpReference>
-        </p1:OutArgument>
-        <p1:OutArgument x:TypeArguments="x:Decimal" x:Key="lonorigin">
-          <mca:CSharpReference x:TypeArguments="x:Decimal">lonOrigin</mca:CSharpReference>
-        </p1:OutArgument>
-        <p1:OutArgument x:TypeArguments="s:Decimal[]" x:Key="latdestination">
-          <mca:CSharpReference x:TypeArguments="s:Decimal[]">latDestination</mca:CSharpReference>
-        </p1:OutArgument>
-        <p1:OutArgument x:TypeArguments="s:Decimal[]" x:Key="londestination">
-          <mca:CSharpReference x:TypeArguments="s:Decimal[]">lonDestination</mca:CSharpReference>
-        </p1:OutArgument>
-        <p1:OutArgument x:TypeArguments="s:String[]" x:Key="idplaces">
-          <mca:CSharpReference x:TypeArguments="s:String[]">IdPlaces</mca:CSharpReference>
-        </p1:OutArgument>
-      </ReceiveParametersContent>
+      </ReceiveMessageContent>
     </Receive>
-    <p1:Switch x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Switch`1_1">
-      <p1:Switch.Default>
-        <w:ConsumeRestActivity Text="{x:Null}" sap2010:WorkflowViewState.IdRef="ConsumeRestActivity_1" />
-      </p1:Switch.Default>
-      <p1:Switch.Expression>
-        <p1:InArgument x:TypeArguments="x:String">
-          <mca:CSharpValue x:TypeArguments="x:String">Method.ToUpper()</mca:CSharpValue>
+    <wa:ConsumeRestGetActivity sap2010:WorkflowViewState.IdRef="ConsumeRestGetActivity_3">
+      <wa:ConsumeRestGetActivity.Data>
+        <p1:InArgument x:TypeArguments="we:WorkflowEntity">
+          <mca:CSharpValue x:TypeArguments="we:WorkflowEntity">Data</mca:CSharpValue>
         </p1:InArgument>
-      </p1:Switch.Expression>
-      <w:ConsumeRestActivity Text="{x:Null}" x:Key="&quot;GET&quot;" sap2010:WorkflowViewState.IdRef="ConsumeRestActivity_2" />
-    </p1:Switch>
+      </wa:ConsumeRestGetActivity.Data>
+    </wa:ConsumeRestGetActivity>
     <SendReply Request="{x:Reference __ReferenceID0}" DisplayName="SendResponse" sap2010:WorkflowViewState.IdRef="SendReply_1">
       <SendMessageContent>
         <p1:InArgument x:TypeArguments="x:String">
@@ -127,23 +89,21 @@
         </p1:InArgument>
       </SendMessageContent>
     </SendReply>
-    <sads:DebugSymbol.Symbol>d2lDOlxVc2Vyc1xzYXNrZVxEb2N1bWVudHNcUHJvamVjdHNcV29ya2Zsb3dcV29ya2Zsb3dTZXJ2aWNlSW50ZVxXb3JrZmxvd1NlcnZpY2VJbnRlXFBhcmtpbmdXRlNlcnZpY2UueGFtbHgVDwODAREBATcLN1UBGTo3OjwBGD0LPVUBDUcLR1UBAksFbw8BVHAFehEBRnsFgQERASRmC2ZiAq0BVwtXVAKiAWwLbFsClwFdC11VAowBYwtjWwKBAWALYFsBdmkLaWIBa1oLWlcBYFAPUFwBVXYLdlkBR3kHeYABAVNyCXJqAVJ+C35bASU=</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d2lDOlxVc2Vyc1xzYXNrZVxEb2N1bWVudHNcUHJvamVjdHNcV29ya2Zsb3dcV29ya2Zsb3dTZXJ2aWNlSW50ZVxXb3JrZmxvd1NlcnZpY2VJbnRlXFBhcmtpbmdXRlNlcnZpY2UueGFtbHgJDwNdEQEBOQs5VQECPgVNDwEYTgVUIQETVQVbEQEGSgtKXgEdQw9DXAEZUQtRVgEUWAtYWwEH</sads:DebugSymbol.Symbol>
   </p1:Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
-      <sap2010:ViewStateData Id="Receive_1" sap:VirtualizedContainerService.HintSize="476,86" />
-      <sap2010:ViewStateData Id="ConsumeRestActivity_1" sap:VirtualizedContainerService.HintSize="200,22" />
-      <sap2010:ViewStateData Id="ConsumeRestActivity_2" sap:VirtualizedContainerService.HintSize="200,22" />
-      <sap2010:ViewStateData Id="Switch`1_1" sap:VirtualizedContainerService.HintSize="476,246" />
-      <sap2010:ViewStateData Id="SendReply_1" sap:VirtualizedContainerService.HintSize="476,86" />
-      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="498,622">
+      <sap2010:ViewStateData Id="Receive_1" sap:VirtualizedContainerService.HintSize="255,86" />
+      <sap2010:ViewStateData Id="ConsumeRestGetActivity_3" sap:VirtualizedContainerService.HintSize="255,22" />
+      <sap2010:ViewStateData Id="SendReply_1" sap:VirtualizedContainerService.HintSize="255,86" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="277,398">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="WorkflowService_1" sap:VirtualizedContainerService.HintSize="528,586">
+      <sap2010:ViewStateData Id="WorkflowService_1" sap:VirtualizedContainerService.HintSize="307,468">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
