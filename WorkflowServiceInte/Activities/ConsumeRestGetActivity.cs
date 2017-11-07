@@ -22,18 +22,64 @@ namespace WorkflowServiceInte.Activities
         protected override void Execute(CodeActivityContext context)
         {
             Log.Debug("Inicio Actividad.");
-            // Obtenga el valor de tiempo de ejecución del argumento de entrada Text
+
             string GmapKey = ConfigurationManager.AppSettings["GmapKey"];
             string BmapKey = ConfigurationManager.AppSettings["BmapKey"];
+            string GplacespKey = ConfigurationManager.AppSettings["GplacespKey"];
+            string FoursquareId = ConfigurationManager.AppSettings["FoursquareId"];
+            string FoursquareSecret = ConfigurationManager.AppSettings["FoursquareSecret"];
+            string Openweathermap = ConfigurationManager.AppSettings["Openweathermap"];
+            string Apixu = ConfigurationManager.AppSettings["Apixu"];
 
             WorkflowEntity dataEntry = context.GetValue(this.Data);
 
+            List<ParkingEntity> listEntity = new List<ParkingEntity>();
+            int totalCoordinatesOrigins = dataEntry.LatitudeOrigins.Length;
+            int totalCoordinatesDestinatios = dataEntry.LatitudeDestinations.Length;
+
+            //Consultar por las propertis hacer un get
+            Log.Debug("Consultar propiedades");
+            for (int i = 0; i < totalCoordinatesOrigins; i++)
+            {
+                //ParkingEntity entity = null;
+                for (int j = 0; j < totalCoordinatesDestinatios; j++)
+                {
+                    //Consumir 
+                    listEntity.Add(new ParkingEntity { }
+                        );
+                }
+            }
+            /*for (int i = 0; i < dataEntry.Properties.Length; i++)
+            {
+                ParkingEntity entity = null;
+                switch (dataEntry.Properties[i].ToUpper())
+                {
+                    
+                    case "GMAPS":
+                        break;
+                    case "BMAPS":
+                        break;
+                    case "GPLACES":
+                        break;
+                    case "FOURSQUARE":
+                        break;
+                    case "APIXU":
+                        break;
+                    case "OPENWEATHER":
+                        break;
+                    default:
+                        break;
+                }
+            }*/
 
 
 
-            /*CustomTrackingRecord record = new CustomTrackingRecord("MyRecord-Get-Init");
+            CustomTrackingRecord record = new CustomTrackingRecord("MyRecord-Get-Init");
             record.Data.Add(new KeyValuePair<String, Object>("ExecutionTime", DateTime.Now));
-            context.Track(record);*/
+            context.Track(record);
         }
     }
+
+    
+
 }
