@@ -8,62 +8,6 @@ namespace WorkflowServiceInte.Entities
     public class WorkflowEntity
     {
         /// <summary>
-        /// Campo Url
-        /// </summary>
-        private string[] urls;
-
-        /// <summary>
-        /// Propiedad Url
-        /// </summary>
-        public string[] Urls
-        {
-            get { return urls; }
-            set { urls = value; }
-        }
-
-        /// <summary>
-        /// Campo Method
-        /// </summary>
-        private string[] method;
-
-        /// <summary>
-        /// Propiedad Method
-        /// </summary>
-        public string[] Method
-        {
-            get { return method; }
-            set { method = value; }
-        }
-
-        /// <summary>
-        /// Campo Body
-        /// </summary>
-        private string[] body;
-
-        /// <summary>
-        /// Propiedad Body
-        /// </summary>
-        public string[] Body
-        {
-            get { return body; }
-            set { body = value; }
-        }
-
-        /// <summary>
-        /// Campo properties (Gmaps, Bmaps etc)
-        /// </summary>
-        private string[] properties;
-
-        /// <summary>
-        /// Propiedad properties
-        /// </summary>
-        public string[] Properties
-        {
-            get { return properties; }
-            set { properties = value; }
-        }
-
-        /// <summary>
         /// Campo latOrigins
         /// </summary>
         private Decimal[] latOrigins;

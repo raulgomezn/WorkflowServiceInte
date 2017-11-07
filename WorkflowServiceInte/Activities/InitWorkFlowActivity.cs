@@ -2,14 +2,14 @@
 using System;
 using System.Activities;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 using System.Xml;
 using WorkflowServiceInte.Entities;
-using System.Linq;
-using System.IO;
-using System.Web.Script.Serialization;
 
 namespace WorkflowServiceInte.Activities
 {
@@ -18,6 +18,7 @@ namespace WorkflowServiceInte.Activities
         // Defina un argumento de entrada de actividad de tipo string
         public InArgument<string> Method { get; set; }
         public InArgument<Int32> MaximumSelected { get; set; }
+        public InArgument<string> Services { get; set; }
         public OutArgument<Boolean> ResultProcess { get; set; }
 
         static HttpClient client = new HttpClient();
@@ -26,16 +27,18 @@ namespace WorkflowServiceInte.Activities
         {
             string method = context.GetValue(this.Method) == null ? "GET": context.GetValue(this.Method);
             Int32 maxSelected = context.GetValue(this.MaximumSelected) == 0 ? 1: context.GetValue(this.MaximumSelected);
+            string service = context.GetValue(this.Services);
 
             ////http://192.168.1.4:3030/parking/sparql
-            Task<bool> result = ConsumeOwlAsync("http://localhost:3030/parking/sparql", method, maxSelected);
+            Task<bool> result = ConsumeOwlAsync("http://localhost:3030/parking/sparql", method, maxSelected, service);
 
             this.ResultProcess.Set(context, result.Result);
         }
 
-        static async Task<bool> ConsumeOwlAsync(string url, string method, Int32 maxSelected)
+        static async Task<bool> ConsumeOwlAsync(string url, string method, Int32 maxSelected, string service)
         {
             string finalMethod = string.Empty;
+            string filter = string.Empty;
 
             switch (method.ToUpper().Trim())
             {
@@ -47,7 +50,10 @@ namespace WorkflowServiceInte.Activities
                     break;
             }
 
-            string jObject = "query= PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  PREFIX : <http://www.semanticweb.org/ca.mendoza968/ontologies/services#> SELECT ?URI ?methodValue (group_concat(?bodyLabel) as ?bodyLabels) (group_concat(?dataTypeLabel) as ?dataTypes) WHERE { ?service a :Service; :aboutProperty ?property. ?service :hasAPIURL ?URL; :hasMethod ?method . ?URL :hasStringValue ?URI.?method a :"+ finalMethod + "; :hasStringValue ?methodValue; :hasBodyField ?bodyField . ?bodyField rdfs:label ?bodyLabel; :hasDataType ?dataType . ?dataType rdfs:label ?dataTypeLabel .} GROUP BY ?URI ?methodValue";
+            if(!string.IsNullOrEmpty(service) || !service.Contains("*"))
+                filter = string.Format("FILTER (?methodValue = \"{0}\") .", service);
+
+            string jObject = "query= PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>  PREFIX : <http://www.semanticweb.org/ca.mendoza968/ontologies/services#> SELECT ?URI ?methodValue (group_concat(?bodyLabel) as ?bodyLabels) (group_concat(?dataTypeLabel) as ?dataTypes) WHERE { ?service a :Service; :aboutProperty ?property. ?service :hasAPIURL ?URL; :hasMethod ?method . ?URL :hasStringValue ?URI.?method a :"+ finalMethod + "; :hasStringValue ?methodValue; :hasBodyField ?bodyField . ?bodyField rdfs:label ?bodyLabel; :hasDataType ?dataType . ?dataType rdfs:label ?dataTypeLabel . "+ filter + "} GROUP BY ?URI ?methodValue";
             
             var stringContent = new StringContent(jObject, Encoding.UTF8, "application/x-www-form-urlencoded");
             
@@ -107,9 +113,9 @@ namespace WorkflowServiceInte.Activities
                     ////Convertir de Ienumerable a List.
                     foreach (var item in finalTrans)
                     {
-                        foreach (var service in item)
+                        foreach (var serviceItem in item)
                         {
-                            distinctValues.Add(service);
+                            distinctValues.Add(serviceItem);
                         }
                     }
                 }

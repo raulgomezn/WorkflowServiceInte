@@ -57,6 +57,7 @@
         <p1:AssemblyReference>Microsoft.Data.Services.Client</p1:AssemblyReference>
         <p1:AssemblyReference>Microsoft.WindowsAzure.Storage</p1:AssemblyReference>
         <p1:AssemblyReference>System.Net.Http</p1:AssemblyReference>
+        <p1:AssemblyReference>System.Web.Extensions</p1:AssemblyReference>
         <p1:AssemblyReference>mscorlib</p1:AssemblyReference>
         <p1:AssemblyReference>WorkflowServiceInte</p1:AssemblyReference>
       </sco:Collection>
@@ -70,6 +71,11 @@
       </p1:Variable>
       <p1:Variable x:TypeArguments="x:Int32" Default="1" Name="MaximumSelected" />
       <p1:Variable x:TypeArguments="x:Boolean" Default="False" Name="SuccessfulProcess" />
+      <p1:Variable x:TypeArguments="x:String" Name="Services">
+        <p1:Variable.Default>
+          <mca:CSharpValue x:TypeArguments="x:String">string.Empty</mca:CSharpValue>
+        </p1:Variable.Default>
+      </p1:Variable>
     </p1:Sequence.Variables>
     <Receive x:Name="__ReferenceID0" CanCreateInstance="True" DisplayName="ReceiveRequest" sap2010:WorkflowViewState.IdRef="Receive_1" OperationName="GetData" ServiceContractName="p:IService">
       <Receive.CorrelationInitializers>
@@ -88,9 +94,12 @@
         <p1:OutArgument x:TypeArguments="x:Int32" x:Key="maxSelected">
           <mca:CSharpReference x:TypeArguments="x:Int32">MaximumSelected</mca:CSharpReference>
         </p1:OutArgument>
+        <p1:OutArgument x:TypeArguments="x:String" x:Key="service">
+          <mca:CSharpReference x:TypeArguments="x:String">Services</mca:CSharpReference>
+        </p1:OutArgument>
       </ReceiveParametersContent>
     </Receive>
-    <wa:InitWorkFlowActivity sap2010:WorkflowViewState.IdRef="InitWorkFlowActivity_1">
+    <wa:InitWorkFlowActivity sap2010:WorkflowViewState.IdRef="InitWorkFlowActivity_2">
       <wa:InitWorkFlowActivity.MaximumSelected>
         <p1:InArgument x:TypeArguments="x:Int32">
           <mca:CSharpValue x:TypeArguments="x:Int32">MaximumSelected</mca:CSharpValue>
@@ -106,6 +115,11 @@
           <mca:CSharpReference x:TypeArguments="x:Boolean">SuccessfulProcess</mca:CSharpReference>
         </p1:OutArgument>
       </wa:InitWorkFlowActivity.ResultProcess>
+      <wa:InitWorkFlowActivity.Services>
+        <p1:InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String">Services</mca:CSharpValue>
+        </p1:InArgument>
+      </wa:InitWorkFlowActivity.Services>
     </wa:InitWorkFlowActivity>
     <SendReply Request="{x:Reference __ReferenceID0}" DisplayName="SendResponse" sap2010:WorkflowViewState.IdRef="SendReply_1" PersistBeforeSend="True">
       <SendMessageContent DeclaredMessageType="x:Boolean">
@@ -114,12 +128,12 @@
         </p1:InArgument>
       </SendMessageContent>
     </SendReply>
-    <sads:DebugSymbol.Symbol>d2RDOlxVc2Vyc1xzYXNrZVxEb2N1bWVudHNcUHJvamVjdHNcV29ya2Zsb3dcV29ya2Zsb3dTZXJ2aWNlSW50ZVxXb3JrZmxvd1NlcnZpY2VJbnRlXEluaXRTZXJ2aWNlLnhhbWx4Dg4DdhEBAUQLRFUBBEc2RzkBA0g4SD8BAkoFXA8BKV0FbR8BGW4FdBEBCVYLVlcBNFkLWV8BL08PT1wBKmALYFcBJGoLamMBH2ULZU8BGnELcVsBCg==</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d2RDOlxVc2Vyc1xzYXNrZVxEb2N1bWVudHNcUHJvamVjdHNcV29ya2Zsb3dcV29ya2Zsb3dTZXJ2aWNlSW50ZVxXb3JrZmxvd1NlcnZpY2VJbnRlXEluaXRTZXJ2aWNlLnhhbWx4EQ4DhAERAQFFC0VVAQpINkg5AQlJOEk/AQhMC0xVAQJQBWUPATxmBXsfASN8BYIBEQEQYgtiWQFPXAtcVwFJXwtfXwFDVQ9VXAE9eAt4UQE2aQtpVwEwcwtzYwEqbgtuTwEkfwt/WwER</sads:DebugSymbol.Symbol>
   </p1:Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
       <sap2010:ViewStateData Id="Receive_1" sap:VirtualizedContainerService.HintSize="255,86" />
-      <sap2010:ViewStateData Id="InitWorkFlowActivity_1" sap:VirtualizedContainerService.HintSize="255,22" />
+      <sap2010:ViewStateData Id="InitWorkFlowActivity_2" sap:VirtualizedContainerService.HintSize="255,22" />
       <sap2010:ViewStateData Id="SendReply_1" sap:VirtualizedContainerService.HintSize="255,86" />
       <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="277,398">
         <sap:WorkflowViewStateService.ViewState>
