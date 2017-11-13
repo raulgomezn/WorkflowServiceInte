@@ -10,6 +10,8 @@ using NLog.Fluent;
 using System.Activities.Tracking;
 using System.IO;
 using Newtonsoft.Json;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace WorkflowServiceInte.Activities
 {
@@ -18,6 +20,7 @@ namespace WorkflowServiceInte.Activities
     {
         // Defina un argumento de entrada de actividad de tipo string
         public InArgument<WorkflowEntity> Data { get; set; }
+        static HttpClient client = new HttpClient();
 
         // Si la actividad devuelve un valor, se debe derivar de CodeActivity<TResult>
         // y devolver el valor desde el método Execute.
@@ -48,49 +51,67 @@ namespace WorkflowServiceInte.Activities
                 items = JsonConvert.DeserializeObject<List<Service>>(json);
             }
 
-            //Consultar por las propertis hacer un get
-            Log.Debug("Consultar propiedades");
-            for (int i = 0; i < totalCoordinatesOrigins; i++)
+            //-----
+            //Tomar un solo servicio 
+            items = items.GroupBy(c => c.methodValue, (key, c) => c.FirstOrDefault()).ToList();
+            //y consultar los datos
+            foreach (Service itemService in items)
             {
-                //ParkingEntity entity = null;
-                for (int j = 0; j < totalCoordinatesDestinatios; j++)
+                switch (itemService.methodValue)
                 {
-                    //Consumir 
-                    listEntity.Add(new ParkingEntity { }
-                        );
-                }
-            }
-            /*for (int i = 0; i < dataEntry.Properties.Length; i++)
-            {
-                ParkingEntity entity = null;
-                switch (dataEntry.Properties[i].ToUpper())
-                {
-                    
-                    case "GMAPS":
+                    case "BestPlace":
                         break;
-                    case "BMAPS":
+                    case "BestRoad":
+                        for (int i = 0; i < totalCoordinatesOrigins; i++)
+                        {
+                            for (int j = 0; j < totalCoordinatesDestinatios; j++)
+                            {
+                                string key = itemService.url.Contains("google") ?GmapKey:BmapKey;
+                                string urlFinal=string.Format(itemService.url,
+                                    dataEntry.LatitudeOrigins[i], dataEntry.LongitudeOrigins[i],
+                                    dataEntry.LatitudeDestinations[j], dataEntry.LongitudeDestinations[j],
+                                    "driving", key);
+
+                                Task<string> result = ConsumeGetAsync(urlFinal);
+
+                                listEntity.Add(new ParkingEntity
+                                {
+                                    Destination = new Coordinates
+                                    {
+                                        Latitude = dataEntry.LatitudeDestinations[j],
+                                        Longitude = dataEntry.LongitudeDestinations[j]
+                                    }
+                                });
+                            }
+                        }
                         break;
-                    case "GPLACES":
-                        break;
-                    case "FOURSQUARE":
-                        break;
-                    case "APIXU":
-                        break;
-                    case "OPENWEATHER":
+                    case "BestWeather":
                         break;
                     default:
                         break;
                 }
-            }*/
+            }
 
+            // devolver la lista final
+            //-----
 
 
             CustomTrackingRecord record = new CustomTrackingRecord("MyRecord-Get-Init");
             record.Data.Add(new KeyValuePair<String, Object>("ExecutionTime", DateTime.Now));
             context.Track(record);
         }
+
+        static async Task<string> ConsumeGetAsync(string url)
+        {
+            string content = string.Empty;
+
+            HttpResponseMessage response = await client.GetAsync(url);
+
+            if (response.EnsureSuccessStatusCode().IsSuccessStatusCode)
+            {
+                content = await response.Content.ReadAsStringAsync();
+            }
+            return content;
+        }
     }
-
-
-
 }

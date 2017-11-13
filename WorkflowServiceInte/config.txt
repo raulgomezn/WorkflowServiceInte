@@ -1,1 +1,1 @@
-[{"url":"https://api.foursquare.com/v2/venues/{0}?client_secret={1}\u0026client_id={2}\u0026v={3}","methodValue":"BestPlace","dataTypes":"string","bodyLabels":"value"}]
+[{"url":"https://maps.googleapis.com/maps/api/distancematrix/json?origins={0},{1}\u0026destinations={2},{3}\u0026mode={4}\u0026key={5}","methodValue":"BestRoad","dataTypes":"decimal decimal decimal decimal","bodyLabels":"longitude longitude_destination latitude_destination latitude"}]
