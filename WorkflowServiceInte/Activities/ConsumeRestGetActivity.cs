@@ -12,6 +12,10 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
+using ActivityLibrary;
+using System.Activities.XamlIntegration;
+using System.Xaml;
+using System.Xml;
 
 namespace WorkflowServiceInte.Activities
 {
@@ -36,7 +40,7 @@ namespace WorkflowServiceInte.Activities
             string Openweathermap = ConfigurationManager.AppSettings["Openweathermap"];
             string Apixu = ConfigurationManager.AppSettings["Apixu"];
 
-            WorkflowEntity dataEntry = context.GetValue(this.Data);
+            WorkflowEntity dataEntry = context.GetValue(this.Data);        
 
             List<ParkingEntity> listEntity = new List<ParkingEntity>();
             List<Service> items = new List<Service>();
@@ -47,8 +51,8 @@ namespace WorkflowServiceInte.Activities
             ////Cargar la configuracion
             using (StreamReader r = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + @"\" + "config.txt"))
             {
-                string json = r.ReadToEnd();
-                items = JsonConvert.DeserializeObject<List<Service>>(json);
+                string jsons = r.ReadToEnd();
+                items = JsonConvert.DeserializeObject<List<Service>>(jsons);
             }
 
             //-----
@@ -66,13 +70,13 @@ namespace WorkflowServiceInte.Activities
                         {
                             for (int j = 0; j < totalCoordinatesDestinatios; j++)
                             {
-                                string key = itemService.url.Contains("google") ?GmapKey:BmapKey;
-                                string urlFinal=string.Format(itemService.url,
+                                string key = itemService.url.Contains("google") ? GmapKey : BmapKey;
+                                string urlFinal = string.Format(itemService.url,
                                     dataEntry.LatitudeOrigins[i], dataEntry.LongitudeOrigins[i],
                                     dataEntry.LatitudeDestinations[j], dataEntry.LongitudeDestinations[j],
                                     "driving", key);
 
-                                Task<string> result = ConsumeGetAsync(urlFinal);
+                                Task<string> resultt = ConsumeGetAsync(urlFinal);
 
                                 listEntity.Add(new ParkingEntity
                                 {

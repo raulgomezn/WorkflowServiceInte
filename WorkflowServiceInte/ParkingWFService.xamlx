@@ -1,5 +1,6 @@
 ﻿<WorkflowService mc:Ignorable="sap sap2010 sads" p1:TextExpression.Namespaces="{x:Reference __ReferenceID1}" p1:TextExpression.References="{x:Reference __ReferenceID2}" ConfigurationName="Service1" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="WorkflowService_1" Name="Service1"
  xmlns="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel"
+ xmlns:a="clr-namespace:ActivityLibrary;assembly=ActivityLibrary"
  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
  xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
  xmlns:p="http://tempuri.org/"
@@ -9,7 +10,6 @@
  xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
  xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
  xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
- xmlns:wa="clr-namespace:WorkflowServiceInte.Activities;assembly=WorkflowServiceInte"
  xmlns:we="clr-namespace:WorkflowServiceInte.Entities;assembly=WorkflowServiceInte"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <p1:Sequence DisplayName="Sequential Service" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -25,17 +25,29 @@
     </p1:TextExpression.Namespaces>
     <p1:TextExpression.References>
       <sco:Collection x:TypeArguments="p1:AssemblyReference" x:Name="__ReferenceID2">
+        <p1:AssemblyReference>dotNetRDF</p1:AssemblyReference>
+        <p1:AssemblyReference>HtmlAgilityPack</p1:AssemblyReference>
         <p1:AssemblyReference>LightCaseClient</p1:AssemblyReference>
+        <p1:AssemblyReference>Microsoft.Azure.KeyVault.Core</p1:AssemblyReference>
         <p1:AssemblyReference>Microsoft.CSharp</p1:AssemblyReference>
+        <p1:AssemblyReference>Microsoft.Data.Edm</p1:AssemblyReference>
+        <p1:AssemblyReference>Microsoft.Data.OData</p1:AssemblyReference>
+        <p1:AssemblyReference>Microsoft.Data.Services.Client</p1:AssemblyReference>
+        <p1:AssemblyReference>Microsoft.WindowsAzure.Diagnostics</p1:AssemblyReference>
+        <p1:AssemblyReference>Microsoft.WindowsAzure.ServiceRuntime</p1:AssemblyReference>
+        <p1:AssemblyReference>Microsoft.WindowsAzure.Storage</p1:AssemblyReference>
+        <p1:AssemblyReference>Newtonsoft.Json</p1:AssemblyReference>
         <p1:AssemblyReference>NLog</p1:AssemblyReference>
         <p1:AssemblyReference>System.Configuration</p1:AssemblyReference>
+        <p1:AssemblyReference>System.Data.DataSetExtensions</p1:AssemblyReference>
+        <p1:AssemblyReference>System.Net.Http</p1:AssemblyReference>
+        <p1:AssemblyReference>System.Spatial</p1:AssemblyReference>
         <p1:AssemblyReference>System.Web.DynamicData</p1:AssemblyReference>
         <p1:AssemblyReference>System.Drawing</p1:AssemblyReference>
         <p1:AssemblyReference>System.Web.Entity</p1:AssemblyReference>
         <p1:AssemblyReference>System.Web.ApplicationServices</p1:AssemblyReference>
         <p1:AssemblyReference>System</p1:AssemblyReference>
         <p1:AssemblyReference>System.Activities</p1:AssemblyReference>
-        <p1:AssemblyReference>System.Core</p1:AssemblyReference>
         <p1:AssemblyReference>System.Data</p1:AssemblyReference>
         <p1:AssemblyReference>System.Data.Entity</p1:AssemblyReference>
         <p1:AssemblyReference>System.Runtime.Serialization</p1:AssemblyReference>
@@ -43,9 +55,17 @@
         <p1:AssemblyReference>System.ServiceModel.Activities</p1:AssemblyReference>
         <p1:AssemblyReference>System.ServiceModel.Channels</p1:AssemblyReference>
         <p1:AssemblyReference>System.Web</p1:AssemblyReference>
+        <p1:AssemblyReference>System.Web.Extensions</p1:AssemblyReference>
         <p1:AssemblyReference>System.Xaml</p1:AssemblyReference>
         <p1:AssemblyReference>System.Xml</p1:AssemblyReference>
         <p1:AssemblyReference>System.Xml.Linq</p1:AssemblyReference>
+        <p1:AssemblyReference>VDS.Common</p1:AssemblyReference>
+        <p1:AssemblyReference>ActivityLibrary</p1:AssemblyReference>
+        <p1:AssemblyReference>PresentationFramework</p1:AssemblyReference>
+        <p1:AssemblyReference>PresentationCore</p1:AssemblyReference>
+        <p1:AssemblyReference>System.Activities.Presentation</p1:AssemblyReference>
+        <p1:AssemblyReference>WindowsBase</p1:AssemblyReference>
+        <p1:AssemblyReference>System.Core</p1:AssemblyReference>
         <p1:AssemblyReference>mscorlib</p1:AssemblyReference>
         <p1:AssemblyReference>WorkflowServiceInte</p1:AssemblyReference>
       </sco:Collection>
@@ -75,13 +95,7 @@
         </p1:OutArgument>
       </ReceiveMessageContent>
     </Receive>
-    <wa:ConsumeRestGetActivity sap2010:WorkflowViewState.IdRef="ConsumeRestGetActivity_3">
-      <wa:ConsumeRestGetActivity.Data>
-        <p1:InArgument x:TypeArguments="we:WorkflowEntity">
-          <mca:CSharpValue x:TypeArguments="we:WorkflowEntity">Data</mca:CSharpValue>
-        </p1:InArgument>
-      </wa:ConsumeRestGetActivity.Data>
-    </wa:ConsumeRestGetActivity>
+    <a:DesignedActivity Entry="{x:Null}" sap2010:WorkflowViewState.IdRef="DesignedActivity_1" />
     <SendReply Request="{x:Reference __ReferenceID0}" DisplayName="SendResponse" sap2010:WorkflowViewState.IdRef="SendReply_1">
       <SendMessageContent>
         <p1:InArgument x:TypeArguments="x:String">
@@ -89,12 +103,12 @@
         </p1:InArgument>
       </SendMessageContent>
     </SendReply>
-    <sads:DebugSymbol.Symbol>d2lDOlxVc2Vyc1xzYXNrZVxEb2N1bWVudHNcUHJvamVjdHNcV29ya2Zsb3dcV29ya2Zsb3dTZXJ2aWNlSW50ZVxXb3JrZmxvd1NlcnZpY2VJbnRlXFBhcmtpbmdXRlNlcnZpY2UueGFtbHgJDwNdEQEBOQs5VQECPgVNDwEYTgVUIQETVQVbEQEGSgtKXgEdQw9DXAEZUQtRVgEUWAtYWwEH</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d2lDOlxVc2Vyc1xzYXNrZVxEb2N1bWVudHNcUHJvamVjdHNcV29ya2Zsb3dcV29ya2Zsb3dTZXJ2aWNlSW50ZVxXb3JrZmxvd1NlcnZpY2VJbnRlXFBhcmtpbmdXRlNlcnZpY2UueGFtbHgIDwNrEQEBTQtNVQECUgVhDwEUYgViYQETYwVpEQEGXgteXgEZVw9XXAEVZgtmWwEH</sads:DebugSymbol.Symbol>
   </p1:Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
       <sap2010:ViewStateData Id="Receive_1" sap:VirtualizedContainerService.HintSize="255,86" />
-      <sap2010:ViewStateData Id="ConsumeRestGetActivity_3" sap:VirtualizedContainerService.HintSize="255,22" />
+      <sap2010:ViewStateData Id="DesignedActivity_1" sap:VirtualizedContainerService.HintSize="255,22" />
       <sap2010:ViewStateData Id="SendReply_1" sap:VirtualizedContainerService.HintSize="255,86" />
       <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="277,398">
         <sap:WorkflowViewStateService.ViewState>
