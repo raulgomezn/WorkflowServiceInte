@@ -60,9 +60,11 @@ namespace ActivityLibrary.Activities
 
                     var data = JObject.Parse(result);
 
-                    float rating = float.Parse("0.0");
+                    string value = (string)data["result"]["rating"];
+                    float rating = float.Parse(value.ToString(new NumberFormatInfo() { NumberDecimalSeparator = "." })) / float.Parse("2.0");
 
                     item.Ranking = rating;
+                    logger.Info("Step2 google rating{0}", rating);
                 }
                 else
                 {
@@ -76,6 +78,7 @@ namespace ActivityLibrary.Activities
                     float rating = float.Parse(value.ToString(new NumberFormatInfo() { NumberDecimalSeparator = "." })) / float.Parse("2.0");
 
                     item.Ranking = rating;
+                    logger.Info("Step2 Foursquare rating{0}", rating);
                 }
 
                 count++;
@@ -86,6 +89,7 @@ namespace ActivityLibrary.Activities
 
         static async Task<string> ConsumeGetAsync(string url)
         {
+            logger.Info("Step2 ConsumeGetAsync url{0}", url);
             string content = string.Empty;
 
             HttpResponseMessage response = await client.GetAsync(url);
@@ -99,6 +103,7 @@ namespace ActivityLibrary.Activities
 
         static async Task<string> ConsumeOwlAsync(string url, string method, Int32 maxSelected, string service)
         {
+            logger.Info("Step2 ConsumeOwlAsync url{0}, method{1}, maxSelected{2}, service {3}}", url, method, maxSelected, service);
             string finalMethod = method;
             string filter = string.Empty;
 

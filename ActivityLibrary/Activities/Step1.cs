@@ -66,6 +66,9 @@ namespace ActivityLibrary.Activities
                     decimal distance = decimal.Parse((string)distanceArray["value"])/1000;
                     decimal time = decimal.Parse((string)timeArray["value"]) / 60;
 
+                    logger.Info("Step1 {0} distance{1}, time{2}", resultUrl.Contains("google") ? "Google" : "Bing", distance, time);
+
+
                     listEntity.Add(new ParkingEntity
                     {
                         Destination = new Coordinates
@@ -87,6 +90,7 @@ namespace ActivityLibrary.Activities
 
         static async Task<string> ConsumeGetAsync(string url)
         {
+            logger.Info("Step1 ConsumeGetAsync url{0}", url);
             string content = string.Empty;
 
             HttpResponseMessage response = await client.GetAsync(url);
@@ -100,6 +104,7 @@ namespace ActivityLibrary.Activities
 
         static async Task<string> ConsumeOwlAsync(string url, string method, Int32 maxSelected, string service)
         {
+            logger.Info("Step1 ConsumeOwlAsync url{0}, method{1}, maxSelected{2}, service {3}}", url, method, maxSelected, service);
             string finalMethod = method;
             string filter = string.Empty;
 

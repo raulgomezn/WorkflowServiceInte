@@ -31,7 +31,7 @@ namespace ActivityLibrary.Activities
         // y devolver el valor desde el método Execute.
         protected override void Execute(CodeActivityContext context)
         {
-            logger.Info("WorkflowInstanceId={0} Step2", context.WorkflowInstanceId);
+            logger.Info("WorkflowInstanceId={0} Step3", context.WorkflowInstanceId);
             string method = "Read";
             Int32 maxSelected = 1;
             string service = "BestWeather";
@@ -63,6 +63,7 @@ namespace ActivityLibrary.Activities
                     float temp = float.Parse(value);
 
                     item.Temperature = temp;
+                    logger.Info("Step3 apixu temp{0}", temp);
                 }
                 else
                 {
@@ -76,6 +77,7 @@ namespace ActivityLibrary.Activities
                     float temp = float.Parse(value);
 
                     item.Temperature = temp;
+                    logger.Info("Step3 Openweathermap temp{0}", temp);
                 }
 
                 count++;
@@ -86,6 +88,7 @@ namespace ActivityLibrary.Activities
 
         static async Task<string> ConsumeGetAsync(string url)
         {
+            logger.Info("Step3 ConsumeGetAsync url{0}", url);
             string content = string.Empty;
 
             HttpResponseMessage response = await client.GetAsync(url);
@@ -99,6 +102,7 @@ namespace ActivityLibrary.Activities
 
         static async Task<string> ConsumeOwlAsync(string url, string method, Int32 maxSelected, string service)
         {
+            logger.Info("Step3 ConsumeOwlAsync url{0}, method{1}, maxSelected{2}, service {3}}", url, method, maxSelected, service);
             string finalMethod = method;
             string filter = string.Empty;
 
