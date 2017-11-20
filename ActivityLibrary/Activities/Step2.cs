@@ -10,6 +10,9 @@ using System.Xml;
 using System.Web.Script.Serialization;
 using Newtonsoft.Json;
 using System.Configuration;
+using NLog;
+using Newtonsoft.Json.Linq;
+using System.Globalization;
 
 namespace ActivityLibrary.Activities
 {
@@ -18,55 +21,67 @@ namespace ActivityLibrary.Activities
     {
         // Defina un argumento de entrada de actividad
         public InArgument<WorkflowEntity> Entry { get; set; }
+        public InArgument<List<ParkingEntity>> EntryParking { get; set; }
         public OutArgument<List<ParkingEntity>> Out { get; set; }
         static HttpClient client = new HttpClient();
+        private static Logger logger = LogManager.GetCurrentClassLogger();
 
         // Si la actividad devuelve un valor, se debe derivar de CodeActivity<TResult>
         // y devolver el valor desde el método Execute.
         protected override void Execute(CodeActivityContext context)
         {
+            logger.Info("WorkflowInstanceId={0} Step2", context.WorkflowInstanceId);
             string method = "Read";
             Int32 maxSelected = 1;
-            string service = "BestRoad";
-            string GmapKey = ConfigurationManager.AppSettings["GmapKey"];
-            string BmapKey = ConfigurationManager.AppSettings["BmapKey"];
+            string service = "BestPlace";
+            string GplacespKey = ConfigurationManager.AppSettings["GplacespKey"];
+            string FoursquareId = ConfigurationManager.AppSettings["FoursquareId"];
+            string FoursquareSecret = ConfigurationManager.AppSettings["FoursquareSecret"];
 
             WorkflowEntity dataEntry = context.GetValue(this.Entry);
+            List<ParkingEntity> dataEntryParking = context.GetValue(this.EntryParking);
 
             ////http://192.168.1.4:3030/parking/sparql
             string resultUrl = ConsumeOwlAsync("http://localhost:3030/parking/sparql", method, maxSelected, service).Result;
 
-            int totalCoordinatesOrigins = dataEntry.LatitudeOrigins.Length;
-            int totalCoordinatesDestinatios = dataEntry.LatitudeDestinations.Length;
+            int count = 0;
 
-            List<ParkingEntity> listEntity = new List<ParkingEntity>();
-
-            for (int i = 0; i < totalCoordinatesOrigins; i++)
+            foreach (ParkingEntity item in dataEntryParking)
             {
-                for (int j = 0; j < totalCoordinatesDestinatios; j++)
+                string urlFinal = string.Empty;
+
+                if (resultUrl.Contains("google"))
                 {
-                    string key = resultUrl.Contains("google") ? GmapKey : BmapKey;
+                    //https://maps.googleapis.com/maps/api/place/details/json?placeid={0}&key={1}
+                    string key = GplacespKey;
+                    urlFinal = string.Format(resultUrl, dataEntry.IdPlaces[count], key);
 
-                    string urlFinal = string.Format(resultUrl,
-                        dataEntry.LatitudeOrigins[i], dataEntry.LongitudeOrigins[i],
-                        dataEntry.LatitudeDestinations[j], dataEntry.LongitudeDestinations[j],
-                        "driving", key);
+                    string result = ConsumeGetAsync(urlFinal).Result;
 
-                    Task<string> result = ConsumeGetAsync(urlFinal);
+                    var data = JObject.Parse(result);
 
-                    listEntity.Add(new ParkingEntity
-                    {
-                        Destination = new Coordinates
-                        {
-                            Latitude = dataEntry.LatitudeDestinations[j],
-                            Longitude = dataEntry.LongitudeDestinations[j]
-                        }
-                    });
+                    float rating = float.Parse("0.0");
+
+                    item.Ranking = rating;
                 }
+                else
+                {
+                    string urlfinal = "https://api.foursquare.com/v2/venues/{0}?&v=20161016&client_id={1}&client_secret={2}";
+                    urlFinal = string.Format(urlfinal, dataEntry.IdPlaces[count].ToString(), FoursquareId, FoursquareSecret);
+
+                    string result = ConsumeGetAsync(urlFinal).Result;
+
+                    var data = JObject.Parse(result);
+                    string value = (string)data["response"]["venue"]["rating"];
+                    float rating = float.Parse(value.ToString(new NumberFormatInfo() { NumberDecimalSeparator = "." })) / float.Parse("2.0");
+
+                    item.Ranking = rating;
+                }
+
+                count++;
             }
 
-
-            this.Out.Set(context, listEntity);
+            this.Out.Set(context, dataEntryParking);
         }
 
         static async Task<string> ConsumeGetAsync(string url)
@@ -159,7 +174,7 @@ namespace ActivityLibrary.Activities
 
                 try
                 {
-                    return distinctValues.Select(x=> x.url).Single();
+                    return distinctValues.Select(x => x.url).Single();
                 }
                 catch (Exception)
                 {

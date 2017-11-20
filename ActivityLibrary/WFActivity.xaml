@@ -2,7 +2,9 @@
  xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
  xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
  xmlns:local="clr-namespace:ActivityLibrary.Entities"
+ xmlns:local1="clr-namespace:ActivityLibrary.Activities"
  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
  xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
  xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
  xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
@@ -49,15 +51,148 @@
       <AssemblyReference>ActivityLibrary</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart sap2010:WorkflowViewState.IdRef="Flowchart_2" StartNode="{x:Null}" sads:DebugSymbol.Symbol="d15DOlxVc2Vyc1xzYXNrZVxEb2N1bWVudHNcUHJvamVjdHNcV29ya2Zsb3dcV29ya2Zsb3dTZXJ2aWNlSW50ZVxBY3Rpdml0eUxpYnJhcnlcV0ZBY3Rpdml0eS54YW1sATQDNIYBAgEB" />
+  <Flowchart sap2010:WorkflowViewState.IdRef="Flowchart_2">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="scg:List(local:ParkingEntity)" Name="listParking" />
+      <Variable x:TypeArguments="scg:List(local:ParkingEntity)" Name="listParkingStep2" />
+    </Flowchart.Variables>
+    <Flowchart.StartNode>
+      <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+        <local1:Step1 sap2010:WorkflowViewState.IdRef="Step1_1">
+          <local1:Step1.Entry>
+            <InArgument x:TypeArguments="local:WorkflowEntity">
+              <mca:CSharpValue x:TypeArguments="local:WorkflowEntity">Entry</mca:CSharpValue>
+            </InArgument>
+          </local1:Step1.Entry>
+          <local1:Step1.Out>
+            <OutArgument x:TypeArguments="scg:List(local:ParkingEntity)">
+              <mca:CSharpReference x:TypeArguments="scg:List(local:ParkingEntity)">listParking</mca:CSharpReference>
+            </OutArgument>
+          </local1:Step1.Out>
+        </local1:Step1>
+        <FlowStep.Next>
+          <FlowDecision x:Name="__ReferenceID2" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+            <FlowDecision.Condition>
+              <mca:CSharpValue x:TypeArguments="x:Boolean">listParking.Count &gt; 0</mca:CSharpValue>
+            </FlowDecision.Condition>
+            <FlowDecision.True>
+              <FlowStep x:Name="__ReferenceID1" sap2010:WorkflowViewState.IdRef="FlowStep_2">
+                <local1:Step2 sap2010:WorkflowViewState.IdRef="Step2_1">
+                  <local1:Step2.Entry>
+                    <InArgument x:TypeArguments="local:WorkflowEntity">
+                      <mca:CSharpValue x:TypeArguments="local:WorkflowEntity">Entry</mca:CSharpValue>
+                    </InArgument>
+                  </local1:Step2.Entry>
+                  <local1:Step2.EntryParking>
+                    <InArgument x:TypeArguments="scg:List(local:ParkingEntity)">
+                      <mca:CSharpValue x:TypeArguments="scg:List(local:ParkingEntity)">listParking</mca:CSharpValue>
+                    </InArgument>
+                  </local1:Step2.EntryParking>
+                  <local1:Step2.Out>
+                    <OutArgument x:TypeArguments="scg:List(local:ParkingEntity)">
+                      <mca:CSharpReference x:TypeArguments="scg:List(local:ParkingEntity)">listParkingStep2</mca:CSharpReference>
+                    </OutArgument>
+                  </local1:Step2.Out>
+                </local1:Step2>
+                <FlowStep.Next>
+                  <FlowStep x:Name="__ReferenceID3" sap2010:WorkflowViewState.IdRef="FlowStep_3">
+                    <local1:Step3 Out="{x:Null}" sap2010:WorkflowViewState.IdRef="Step3_1">
+                      <local1:Step3.Entry>
+                        <InArgument x:TypeArguments="local:WorkflowEntity">
+                          <mca:CSharpValue x:TypeArguments="local:WorkflowEntity">Entry</mca:CSharpValue>
+                        </InArgument>
+                      </local1:Step3.Entry>
+                      <local1:Step3.EntryParking>
+                        <InArgument x:TypeArguments="scg:List(local:ParkingEntity)">
+                          <mca:CSharpValue x:TypeArguments="scg:List(local:ParkingEntity)">listParkingStep2</mca:CSharpValue>
+                        </InArgument>
+                      </local1:Step3.EntryParking>
+                      <local1:Step3.OutFinal>
+                        <OutArgument x:TypeArguments="local:ParkingEntity[]">
+                          <mca:CSharpReference x:TypeArguments="local:ParkingEntity[]">OutFinal</mca:CSharpReference>
+                        </OutArgument>
+                      </local1:Step3.OutFinal>
+                    </local1:Step3>
+                  </FlowStep>
+                </FlowStep.Next>
+              </FlowStep>
+            </FlowDecision.True>
+          </FlowDecision>
+        </FlowStep.Next>
+      </FlowStep>
+    </Flowchart.StartNode>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+    <x:Reference>__ReferenceID2</x:Reference>
+    <x:Reference>__ReferenceID3</x:Reference>
+    <sads:DebugSymbol.Symbol>d15DOlxVc2Vyc1xzYXNrZVxEb2N1bWVudHNcUHJvamVjdHNcV29ya2Zsb3dcV29ya2Zsb3dTZXJ2aWNlSW50ZVxBY3Rpdml0eUxpYnJhcnlcV0ZBY3Rpdml0eS54YW1sDTYDgQEPAgEBPQlIGAIBJ0wPTGYCASJQEWAgAgESYxVzJAIBAkAPQF4CAS1FD0V1AgEoWBdYdQIBHVMXU2YCARhdF12CAQIBE2sba34CAQ1mG2ZqAgEIcBtwdgIBAw==</sads:DebugSymbol.Symbol>
+  </Flowchart>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="Step1_1" sap:VirtualizedContainerService.HintSize="200,22">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Step2_1" sap:VirtualizedContainerService.HintSize="200,22">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Step3_1" sap:VirtualizedContainerService.HintSize="200,22">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowStep_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">280,430</av:Point>
+            <av:Size x:Key="ShapeSize">200,22</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowStep_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">50,299</av:Point>
+            <av:Size x:Key="ShapeSize">200,22</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">150,321 150,351 380,351 380,430</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowDecision_1" sap:VirtualizedContainerService.HintSize="70,87">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <av:Point x:Key="ShapeLocation">285,176.5</av:Point>
+            <av:Size x:Key="ShapeSize">70,87</av:Size>
+            <av:PointCollection x:Key="TrueConnector">285,220 150,220 150,299</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowStep_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">140,119</av:Point>
+            <av:Size x:Key="ShapeSize">200,22</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">240,141 240,171 320,171 320,176.5</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
       <sap2010:ViewStateData Id="Flowchart_2" sap:VirtualizedContainerService.HintSize="614,636">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
             <av:Size x:Key="ShapeSize">60,75</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,107.5 240,107.5 240,119</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>

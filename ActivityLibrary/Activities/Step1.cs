@@ -1,10 +1,12 @@
 ﻿using ActivityLibrary.Entities;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using NLog;
 using System;
 using System.Activities;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Globalization;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -50,11 +52,19 @@ namespace ActivityLibrary.Activities
                     string key = resultUrl.Contains("google") ? GmapKey : BmapKey;
 
                     string urlFinal = string.Format(resultUrl,
-                        dataEntry.LatitudeOrigins[i], dataEntry.LongitudeOrigins[i],
-                        dataEntry.LatitudeDestinations[j], dataEntry.LongitudeDestinations[j],
+                        dataEntry.LatitudeOrigins[i].ToString(new NumberFormatInfo() { NumberDecimalSeparator = "." }), 
+                        dataEntry.LongitudeOrigins[i].ToString(new NumberFormatInfo() { NumberDecimalSeparator = "." }),
+                        dataEntry.LatitudeDestinations[j].ToString(new NumberFormatInfo() { NumberDecimalSeparator = "." }), 
+                        dataEntry.LongitudeDestinations[j].ToString(new NumberFormatInfo() { NumberDecimalSeparator = "." }),
                         "driving", key);
 
-                    Task<string> result = ConsumeGetAsync(urlFinal);
+                    string result = ConsumeGetAsync(urlFinal).Result;
+
+                    var data = JObject.Parse(result);
+                    var distanceArray = data["rows"][0]["elements"][0]["distance"];
+                    var timeArray = data["rows"][0]["elements"][0]["duration"];
+                    decimal distance = decimal.Parse((string)distanceArray["value"])/1000;
+                    decimal time = decimal.Parse((string)timeArray["value"]) / 60;
 
                     listEntity.Add(new ParkingEntity
                     {
@@ -62,6 +72,10 @@ namespace ActivityLibrary.Activities
                         {
                             Latitude = dataEntry.LatitudeDestinations[j],
                             Longitude = dataEntry.LongitudeDestinations[j]
+                        },
+                        DistanceMatrix = new DistanceMatrix {
+                            Distance = distance,
+                            Time = time
                         }
                     });
                 }
