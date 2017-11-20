@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using ActivityLibrary.Entities;
+using Newtonsoft.Json;
+using NLog;
+using System;
 using System.Activities;
-using ActivityLibrary.Entities;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
-using System.Web.Script.Serialization;
-using Newtonsoft.Json;
-using System.Configuration;
 
 namespace ActivityLibrary.Activities
 {
@@ -20,11 +20,13 @@ namespace ActivityLibrary.Activities
         public InArgument<WorkflowEntity> Entry { get; set; }
         public OutArgument<List<ParkingEntity>> Out { get; set; }
         static HttpClient client = new HttpClient();
+        private static Logger logger = LogManager.GetCurrentClassLogger();
 
         // Si la actividad devuelve un valor, se debe derivar de CodeActivity<TResult>
         // y devolver el valor desde el método Execute.
         protected override void Execute(CodeActivityContext context)
         {
+            logger.Info("WorkflowInstanceId={0}", context.WorkflowInstanceId);
             string method = "Read";
             Int32 maxSelected = 1;
             string service = "BestRoad";

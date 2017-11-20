@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using ActivityLibrary.Entities;
+using Newtonsoft.Json;
 using System;
 using System.Activities;
 using System.Collections.Generic;
@@ -9,7 +10,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
 using System.Xml;
-using WorkflowServiceInte.Entities;
 
 namespace WorkflowServiceInte.Activities
 {

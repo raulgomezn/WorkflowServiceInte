@@ -1,21 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Activities;
-using LightCaseClient;
 using System.Configuration;
-using WorkflowServiceInte.Entities;
 using NLog.Fluent;
 using System.Activities.Tracking;
 using System.IO;
 using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
-using ActivityLibrary;
-using System.Activities.XamlIntegration;
-using System.Xaml;
-using System.Xml;
+using ActivityLibrary.Entities;
 
 namespace WorkflowServiceInte.Activities
 {

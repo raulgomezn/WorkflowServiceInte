@@ -1,6 +1,7 @@
 ﻿<WorkflowService mc:Ignorable="sap sap2010 sads" p1:TextExpression.Namespaces="{x:Reference __ReferenceID1}" p1:TextExpression.References="{x:Reference __ReferenceID2}" ConfigurationName="Service1" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="WorkflowService_1" Name="Service1"
  xmlns="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel"
  xmlns:a="clr-namespace:ActivityLibrary;assembly=ActivityLibrary"
+ xmlns:ae="clr-namespace:ActivityLibrary.Entities;assembly=ActivityLibrary"
  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
  xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
  xmlns:p="http://tempuri.org/"
@@ -10,7 +11,6 @@
  xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
  xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
  xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
- xmlns:we="clr-namespace:WorkflowServiceInte.Entities;assembly=WorkflowServiceInte"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <p1:Sequence DisplayName="Sequential Service" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <p1:TextExpression.Namespaces>
@@ -20,12 +20,11 @@
         <x:String>System.Data</x:String>
         <x:String>System.Linq</x:String>
         <x:String>System.Text</x:String>
-        <x:String>WorkflowServiceInte.Entities</x:String>
+        <x:String>ActivityLibrary.Entities</x:String>
       </sco:Collection>
     </p1:TextExpression.Namespaces>
     <p1:TextExpression.References>
       <sco:Collection x:TypeArguments="p1:AssemblyReference" x:Name="__ReferenceID2">
-        <p1:AssemblyReference>dotNetRDF</p1:AssemblyReference>
         <p1:AssemblyReference>HtmlAgilityPack</p1:AssemblyReference>
         <p1:AssemblyReference>LightCaseClient</p1:AssemblyReference>
         <p1:AssemblyReference>Microsoft.Azure.KeyVault.Core</p1:AssemblyReference>
@@ -38,6 +37,9 @@
         <p1:AssemblyReference>Microsoft.WindowsAzure.Storage</p1:AssemblyReference>
         <p1:AssemblyReference>Newtonsoft.Json</p1:AssemblyReference>
         <p1:AssemblyReference>NLog</p1:AssemblyReference>
+        <p1:AssemblyReference>PresentationCore</p1:AssemblyReference>
+        <p1:AssemblyReference>PresentationFramework</p1:AssemblyReference>
+        <p1:AssemblyReference>System.Activities.Presentation</p1:AssemblyReference>
         <p1:AssemblyReference>System.Configuration</p1:AssemblyReference>
         <p1:AssemblyReference>System.Data.DataSetExtensions</p1:AssemblyReference>
         <p1:AssemblyReference>System.Net.Http</p1:AssemblyReference>
@@ -60,11 +62,8 @@
         <p1:AssemblyReference>System.Xml</p1:AssemblyReference>
         <p1:AssemblyReference>System.Xml.Linq</p1:AssemblyReference>
         <p1:AssemblyReference>VDS.Common</p1:AssemblyReference>
-        <p1:AssemblyReference>ActivityLibrary</p1:AssemblyReference>
-        <p1:AssemblyReference>PresentationFramework</p1:AssemblyReference>
-        <p1:AssemblyReference>PresentationCore</p1:AssemblyReference>
-        <p1:AssemblyReference>System.Activities.Presentation</p1:AssemblyReference>
         <p1:AssemblyReference>WindowsBase</p1:AssemblyReference>
+        <p1:AssemblyReference>ActivityLibrary</p1:AssemblyReference>
         <p1:AssemblyReference>System.Core</p1:AssemblyReference>
         <p1:AssemblyReference>mscorlib</p1:AssemblyReference>
         <p1:AssemblyReference>WorkflowServiceInte</p1:AssemblyReference>
@@ -72,12 +71,8 @@
     </p1:TextExpression.References>
     <p1:Sequence.Variables>
       <p1:Variable x:TypeArguments="CorrelationHandle" Name="handle" />
-      <p1:Variable x:TypeArguments="x:String" Name="AnswerW">
-        <p1:Variable.Default>
-          <mca:CSharpValue x:TypeArguments="x:String">string.Empty</mca:CSharpValue>
-        </p1:Variable.Default>
-      </p1:Variable>
-      <p1:Variable x:TypeArguments="we:WorkflowEntity" Name="Data" />
+      <p1:Variable x:TypeArguments="ae:WorkflowEntity" Name="Data" />
+      <p1:Variable x:TypeArguments="ae:ParkingEntity[]" Name="ResultFinal" />
     </p1:Sequence.Variables>
     <Receive x:Name="__ReferenceID0" CanCreateInstance="True" DisplayName="ReceiveRequest" sap2010:WorkflowViewState.IdRef="Receive_1" OperationName="ExecuteW" ServiceContractName="p:IService">
       <Receive.CorrelationInitializers>
@@ -89,21 +84,32 @@
           </RequestReplyCorrelationInitializer.CorrelationHandle>
         </RequestReplyCorrelationInitializer>
       </Receive.CorrelationInitializers>
-      <ReceiveMessageContent DeclaredMessageType="we:WorkflowEntity">
-        <p1:OutArgument x:TypeArguments="we:WorkflowEntity">
-          <mca:CSharpReference x:TypeArguments="we:WorkflowEntity">Data</mca:CSharpReference>
+      <ReceiveMessageContent DeclaredMessageType="ae:WorkflowEntity">
+        <p1:OutArgument x:TypeArguments="ae:WorkflowEntity">
+          <mca:CSharpReference x:TypeArguments="ae:WorkflowEntity">Data</mca:CSharpReference>
         </p1:OutArgument>
       </ReceiveMessageContent>
     </Receive>
-    <a:DesignedActivity Entry="{x:Null}" sap2010:WorkflowViewState.IdRef="DesignedActivity_1" />
-    <SendReply Request="{x:Reference __ReferenceID0}" DisplayName="SendResponse" sap2010:WorkflowViewState.IdRef="SendReply_1">
-      <SendMessageContent>
-        <p1:InArgument x:TypeArguments="x:String">
-          <mca:CSharpValue x:TypeArguments="x:String">AnswerW.ToString()</mca:CSharpValue>
+    <a:DesignedActivity sap2010:WorkflowViewState.IdRef="DesignedActivity_1">
+      <a:DesignedActivity.Entry>
+        <p1:InArgument x:TypeArguments="ae:WorkflowEntity">
+          <mca:CSharpValue x:TypeArguments="ae:WorkflowEntity">Data</mca:CSharpValue>
         </p1:InArgument>
-      </SendMessageContent>
+      </a:DesignedActivity.Entry>
+      <a:DesignedActivity.OutFinal>
+        <p1:OutArgument x:TypeArguments="ae:ParkingEntity[]">
+          <mca:CSharpReference x:TypeArguments="ae:ParkingEntity[]">ResultFinal</mca:CSharpReference>
+        </p1:OutArgument>
+      </a:DesignedActivity.OutFinal>
+    </a:DesignedActivity>
+    <SendReply Request="{x:Reference __ReferenceID0}" DisplayName="SendResponse" sap2010:WorkflowViewState.IdRef="SendReply_1" PersistBeforeSend="True">
+      <SendParametersContent>
+        <p1:InArgument x:TypeArguments="ae:ParkingEntity[]" x:Key="result">
+          <mca:CSharpValue x:TypeArguments="ae:ParkingEntity[]">ResultFinal</mca:CSharpValue>
+        </p1:InArgument>
+      </SendParametersContent>
     </SendReply>
-    <sads:DebugSymbol.Symbol>d2lDOlxVc2Vyc1xzYXNrZVxEb2N1bWVudHNcUHJvamVjdHNcV29ya2Zsb3dcV29ya2Zsb3dTZXJ2aWNlSW50ZVxXb3JrZmxvd1NlcnZpY2VJbnRlXFBhcmtpbmdXRlNlcnZpY2UueGFtbHgIDwNrEQEBTQtNVQECUgVhDwEUYgViYQETYwVpEQEGXgteXgEZVw9XXAEVZgtmWwEH</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d2lDOlxVc2Vyc1xzYXNrZVxEb2N1bWVudHNcUHJvamVjdHNcV29ya2Zsb3dcV29ya2Zsb3dTZXJ2aWNlSW50ZVxXb3JrZmxvd1NlcnZpY2VJbnRlXFBhcmtpbmdXRlNlcnZpY2UueGFtbHgJDwNxEQEBTQVcDwEYXQVoGgEPaQVvEQECWQtZXgEdUg9SXAEZYAtgVgEUZQtlZgEQbAtsXgED</sads:DebugSymbol.Symbol>
   </p1:Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
