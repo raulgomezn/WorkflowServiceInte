@@ -1,0 +1,28 @@
+<h1>Service OWL</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!forecasts"><em>Loading...</em></p>
+
+<table class='table' *ngIf="forecasts">
+    <thead>
+        <tr>
+            <th>method</th>
+            <th>url</th>
+            <th>serviceType</th>
+            <th>dataTypes</th>
+            <th>bodyLabels</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let forecast of forecasts">
+            <td>{{ forecast.method }}</td>
+            <td style="max-width: 150px;word-wrap: break-word;">{{ forecast.url }}</td>
+            <td>{{ forecast.methodValue }}</td>
+            <td>{{ forecast.dataTypes }}</td>
+            <td>{{ forecast.bodyLabels }}</td>
+            <td (click)="data(forecast)"><button>Generate Class</button></td>
+        </tr>
+    </tbody>
+</table>

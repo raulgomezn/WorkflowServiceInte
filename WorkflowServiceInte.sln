@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowServiceInte", "Work
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActivityLibrary", "ActivityLibrary\ActivityLibrary.csproj", "{AC65AE75-6292-4E2A-A6EA-1585E5284CB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report", "Report\Report.csproj", "{16706AAC-AC10-4287-A9AB-E9B704376880}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AC65AE75-6292-4E2A-A6EA-1585E5284CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC65AE75-6292-4E2A-A6EA-1585E5284CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC65AE75-6292-4E2A-A6EA-1585E5284CB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16706AAC-AC10-4287-A9AB-E9B704376880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16706AAC-AC10-4287-A9AB-E9B704376880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16706AAC-AC10-4287-A9AB-E9B704376880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16706AAC-AC10-4287-A9AB-E9B704376880}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
