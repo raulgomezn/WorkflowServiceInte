@@ -7,7 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowServiceInte", "Work
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActivityLibrary", "ActivityLibrary\ActivityLibrary.csproj", "{AC65AE75-6292-4E2A-A6EA-1585E5284CB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report", "Report\Report.csproj", "{16706AAC-AC10-4287-A9AB-E9B704376880}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Report", "Report\Report.csproj", "{16706AAC-AC10-4287-A9AB-E9B704376880}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Workflow", "1.Workflow", "{A7A4919B-D965-4003-8E5B-EA500209FF93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Reporte", "2.Reporte", "{DBF0CA4E-08B9-4536-8689-69BC684F2C6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +34,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99842A41-A6D7-4522-AEB1-1B9FD246BF4A} = {A7A4919B-D965-4003-8E5B-EA500209FF93}
+		{AC65AE75-6292-4E2A-A6EA-1585E5284CB3} = {A7A4919B-D965-4003-8E5B-EA500209FF93}
+		{16706AAC-AC10-4287-A9AB-E9B704376880} = {DBF0CA4E-08B9-4536-8689-69BC684F2C6D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93A37DC4-5AC9-45AF-A6F4-220FC75BEE8D}
