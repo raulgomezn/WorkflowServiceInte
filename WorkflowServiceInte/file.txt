@@ -1,1 +1,829 @@
 2017-11-20 04:30:33.2267|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=4851d38e-66e0-4933-8e51-b2525c21d449
+2017-11-20 05:11:33.7444|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=3d2d5953-0359-4e87-bb1c-aa4fbf1b469b
+2017-11-20 05:12:48.3488|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=d148507a-9eb5-44e8-a4f0-27161352c044
+2017-11-20 05:15:33.0495|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=e6a074ab-ced3-4458-9e1f-d922d583acbb
+2017-11-20 05:19:26.6992|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=19a35cb6-4ebc-402d-9fcd-f9c70f10cfef
+2017-11-20 05:20:53.0890|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=94f7bcbb-66f0-4e85-888f-3dfd065be81d
+2017-11-20 05:27:08.2182|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=9e4244e7-2ee4-4305-9433-886ca55657ac
+2017-11-20 05:41:42.0089|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=4fa06dbe-b519-413e-99bb-ae928e05c015
+2017-11-20 05:44:37.3549|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=a61172f9-beb0-40e4-9878-e45f0499d5f3
+2017-11-20 05:51:44.7872|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=c7d85554-d345-4b8d-84eb-4b61af4cb7a4
+2017-11-20 05:54:02.5680|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=b6baca94-f962-4fe1-9f11-aef655b09076
+2017-11-20 05:55:33.7589|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=b45c7949-24c4-4d53-8b7e-7ebe3ac6da74
+2017-11-20 05:57:08.4517|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=10d67f27-8f72-4eb9-978c-ee20cb50ecd0
+2017-11-20 05:59:28.2745|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=146f7ccc-521a-4e49-af97-ea7c405508a2
+2017-11-20 06:01:15.2573|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=0f972736-6290-4ced-ab7d-0577739d01b9
+2017-11-20 06:02:39.8355|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=f3e30774-8e4f-42d8-b709-c9ece6ba4563
+2017-11-20 06:04:45.8080|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=55c7a471-63ea-4a92-a28c-84561391ab85
+2017-11-20 06:06:16.6880|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=c3554b5c-81f8-45b1-96dc-d48bdfcfcf34
+2017-11-20 06:08:39.3123|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=9c6975c4-bd29-46b3-8c43-dc18f25d482a
+2017-11-20 06:09:50.7747|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=36af8e3e-083b-4f0a-b359-7f55caa783e6
+2017-11-20 06:31:39.8320|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=19972d10-399f-4596-8658-52b32412acd5
+2017-11-20 06:31:43.8663|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=19972d10-399f-4596-8658-52b32412acd5 Step2
+2017-11-20 06:31:59.2525|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=21dd404e-bb64-423b-9176-bfdcaedbc2c8
+2017-11-20 06:32:12.9482|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=21dd404e-bb64-423b-9176-bfdcaedbc2c8 Step2
+2017-11-20 06:46:06.1171|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=07836f69-43c8-40f2-a28c-c95106d8ce83
+2017-11-20 06:46:14.0564|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=07836f69-43c8-40f2-a28c-c95106d8ce83 Step2
+2017-11-20 06:47:01.5518|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=f719f5d8-ad38-4495-8725-cabff1aa080f
+2017-11-20 06:47:20.1407|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=f719f5d8-ad38-4495-8725-cabff1aa080f Step2
+2017-11-20 06:49:54.1015|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=1ca9774a-4c64-4f4e-8e8b-f9a7f90acfc5
+2017-11-20 06:49:58.1410|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=1ca9774a-4c64-4f4e-8e8b-f9a7f90acfc5 Step2
+2017-11-20 07:09:50.9548|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=17abb363-2a93-4525-be22-5d17f2a98ed2
+2017-11-20 07:09:55.5515|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=17abb363-2a93-4525-be22-5d17f2a98ed2 Step2
+2017-11-20 07:15:24.7245|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=1dd0c570-6e56-42c4-818c-111b933b16b0
+2017-11-20 07:15:29.2577|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=1dd0c570-6e56-42c4-818c-111b933b16b0 Step2
+2017-11-20 07:16:14.3143|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=793bfe75-a7d4-4619-b3df-e673b7a51a04
+2017-11-20 07:16:17.9525|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=793bfe75-a7d4-4619-b3df-e673b7a51a04 Step2
+2017-11-20 07:16:26.8641|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=dca35dff-e68e-47c8-9363-6c6e9290720b
+2017-11-20 07:16:33.6104|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=dca35dff-e68e-47c8-9363-6c6e9290720b Step2
+2017-11-20 07:18:07.5272|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=60777547-8639-40f2-80c6-5ab5ced01d6c
+2017-11-20 07:18:10.6923|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=60777547-8639-40f2-80c6-5ab5ced01d6c Step2
+2017-11-20 07:18:33.4786|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=f716c467-56dd-4798-8d9b-80ab01f7d902
+2017-11-20 07:18:37.4259|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=f716c467-56dd-4798-8d9b-80ab01f7d902 Step2
+2017-11-20 07:21:26.9504|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=2ed63273-e4a0-4747-9ae9-539fa1c6ed3c
+2017-11-20 07:21:31.8497|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=2ed63273-e4a0-4747-9ae9-539fa1c6ed3c Step2
+2017-11-20 07:26:14.0739|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=306d90e0-373a-4a1d-a39e-4099b2ce6d9f
+2017-11-20 07:26:19.8542|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=306d90e0-373a-4a1d-a39e-4099b2ce6d9f Step2
+2017-11-20 07:27:32.5376|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=69af4066-07c0-447e-be53-f3385387050b
+2017-11-20 07:27:35.4778|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=69af4066-07c0-447e-be53-f3385387050b Step2
+2017-11-20 07:30:47.5316|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=4b47dc57-3a27-4ebc-9c00-52201a2197c1
+2017-11-20 07:30:50.9718|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=4b47dc57-3a27-4ebc-9c00-52201a2197c1 Step2
+2017-11-20 07:33:20.9804|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=b709c82e-4c7f-45ca-9ee5-0d3016f70396
+2017-11-20 07:33:23.9091|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=b709c82e-4c7f-45ca-9ee5-0d3016f70396 Step2
+2017-11-20 07:49:13.8683|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=23b91bda-24d8-49b6-9745-d27c2d0a8d5b
+2017-11-20 07:49:17.2235|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=23b91bda-24d8-49b6-9745-d27c2d0a8d5b Step2
+2017-11-20 07:50:35.9307|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=99c732bb-db41-4554-ab2b-07b75dad2d1d
+2017-11-20 07:50:41.5314|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=99c732bb-db41-4554-ab2b-07b75dad2d1d Step2
+2017-11-20 07:50:43.1905|INFO|ActivityLibrary.Activities.Step3|WorkflowInstanceId=99c732bb-db41-4554-ab2b-07b75dad2d1d Step2
+2017-11-20 07:55:02.9019|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=a4db9d12-4d49-4bdd-bfac-710547dbca36
+2017-11-20 07:55:06.2061|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=a4db9d12-4d49-4bdd-bfac-710547dbca36 Step2
+2017-11-20 07:55:09.4708|INFO|ActivityLibrary.Activities.Step3|WorkflowInstanceId=a4db9d12-4d49-4bdd-bfac-710547dbca36 Step2
+2017-11-20 08:05:17.2882|INFO|ActivityLibrary.Activities.Step1|WorkflowInstanceId=566f9501-430b-484e-9c99-de385a7335f2
+2017-11-20 08:05:17.3232|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumeOwlAsync url{0}, method{1}, maxSelected{2}, service {3}}
+2017-11-20 08:05:17.7573|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumeGetAsync urlhttps://maps.googleapis.com/maps/api/distancematrix/json?origins=4.682487,-74.120194&destinations=4.603062,-74.065258&mode=driving&key=AIzaSyAXMPZCjUosUZrsDg7QQobf1ZXEayJAn3w
+2017-11-20 08:05:18.3323|INFO|ActivityLibrary.Activities.Step1|Step1 Google distance15,708, time26,95
+2017-11-20 08:05:21.2084|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=566f9501-430b-484e-9c99-de385a7335f2 Step2
+2017-11-20 08:05:21.2614|INFO|ActivityLibrary.Activities.Step2|Step2 ConsumeOwlAsync url{0}, method{1}, maxSelected{2}, service {3}}
+2017-11-20 08:05:21.3405|INFO|ActivityLibrary.Activities.Step2|Step2 ConsumeGetAsync urlhttps://api.foursquare.com/v2/venues/4e2867dfb0fba988bb6b98a8?&v=20161016&client_id=LEBHNRXUJE3DRK4VGTCAJY23R1BP033PSRAARKJBBUBT3JSA&client_secret=LEIDEUKU0O0NAQXDJGXEDTYDSEVVSV0RU4AIIWSKP4G5YW2Q
+2017-11-20 08:05:23.1265|INFO|ActivityLibrary.Activities.Step2|Step2 Foursquare rating3,6
+2017-11-20 08:05:23.1365|INFO|ActivityLibrary.Activities.Step3|WorkflowInstanceId=566f9501-430b-484e-9c99-de385a7335f2 Step3
+2017-11-20 08:05:23.1365|INFO|ActivityLibrary.Activities.Step3|Step3 ConsumeOwlAsync url{0}, method{1}, maxSelected{2}, service {3}}
+2017-11-20 08:05:25.1097|INFO|ActivityLibrary.Activities.Step3|Step3 ConsumeGetAsync urlhttp://api.apixu.com/v1/current.json?key=a32cb2cc6f124134893201847171210&q=4.603062,-74.065258
+2017-11-20 08:05:26.5977|INFO|ActivityLibrary.Activities.Step3|Step3 apixu temp12
+2017-11-27 10:02:29.5119|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=40193073-e629-40b8-85b6-343817a5af4d
+2017-11-27 10:03:22.8217|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{"{0}": 4.682487,"{1}":-74.120194,"{2}": 4.603062,"{3}": -74.065258}","deviceId": "Road"}
+2017-11-27 10:04:31.0929|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=1c4e4cbf-2e9d-4a5a-8ee8-e5cbc33abe31
+2017-11-27 10:04:50.7925|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{"{0}": 4.682487,"{1}":-74.120194,"{2}": 4.603062,"{3}": -74.065258}","deviceId": "Road"}
+2017-11-27 10:07:33.2007|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=30d54207-89ec-49df-b254-c55f60325e66
+2017-11-27 10:07:41.1522|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{"{0}": 4.682487,"{1}":-74.120194,"{2}": 4.603062,"{3}": -74.065258}","deviceId": "Road"}
+2017-11-27 10:14:59.7054|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=9e53362f-d06e-48ae-a322-5590d37e9448
+2017-11-27 10:15:08.6518|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{"{0}": 4.682487,"{1}":-74.120194,"{2}": 4.603062,"{3}": -74.065258}","deviceId": "Road"}
+2017-11-27 10:22:22.5890|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=5f1ccde0-3558-436a-9195-e1f0d13e8184
+2017-11-27 10:22:27.8461|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{"{0}": 4.682487,"{1}":-74.120194,"{2}": 4.603062,"{3}": -74.065258}","deviceId": "Road"}
+2017-11-27 10:22:38.0018|INFO|ActivityLibrary.Activities.Step1|Step1 StatusCode BadRequest::: StatusCode: 400, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Transfer-Encoding: chunked
+  Connection: close
+  Date: Mon, 27 Nov 2017 15:22:27 GMT
+  Content-Type: application/json; charset=UTF-8
+}
+2017-11-27 15:57:30.9959|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=ea4459a3-aebd-43ca-a9aa-a171a6310bfe
+2017-11-27 15:57:36.0079|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{"{0}": 4.682487,"{1}":-74.120194,"{2}": 4.603062,"{3}": -74.065258}","deviceId": "Road"}
+2017-11-27 16:06:04.1069|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=c9995264-f9ba-415a-a99c-246f4b66b5ff
+2017-11-27 16:13:43.1836|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=d3735c81-5931-4f56-8fa2-357241f07c37
+2017-11-27 16:14:00.6113|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": {"{0}": 4.682487,"{1}":-74.120194,"{2}": 4.603062,"{3}": -74.065258},"deviceId": "Road"}
+2017-11-27 16:15:35.7743|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=a9483a3a-c76a-424e-be74-4b7bc8eca10a
+2017-11-27 16:16:08.3310|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": {"{0}": 4.682487,"{1}":-74.120194,"{2}": 4.603062,"{3}": -74.065258},"deviceId": "Road"}
+2017-11-27 16:18:05.9463|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=899e5a30-fb34-4e72-9e58-317b74682258
+2017-11-27 16:18:22.4267|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": {"{0}": 4.682487,"{1}":-74.120194,"{2}": 4.603062,"{3}": -74.065258},"deviceId": "Road"}
+2017-11-27 16:23:33.3798|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=64c9d8d6-0fdc-4acd-8287-5606969700a7
+2017-11-27 16:23:33.4088|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": {"{0}": 4.682487,"{1}":-74.120194,"{2}": 4.603062,"{3}": -74.065258},"deviceId": "Road"}
+2017-11-27 16:25:09.0011|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=b695161a-c743-49c6-816c-bd7da5f27829
+2017-11-27 16:25:09.0301|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{"{0}": 4.682487,"{1}":-74.120194,"{2}": 4.603062,"{3}": -74.065258}" ,"deviceId": "Road"}
+2017-11-27 16:27:39.1233|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=b7918512-5681-4844-b32b-faff81b17a8f
+2017-11-27 16:27:39.1523|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{"{0}": 4.682487,"{1}":-74.120194,"{2}": 4.603062,"{3}": -74.065258}" , "deviceId": "Road"}
+2017-11-27 16:38:13.8230|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=88b5a3aa-bd0a-45b1-9d53-f387a6d4df40
+2017-11-27 16:38:13.8550|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{"{0}": 4.682487,"{1}":-74.120194,"{2}": 4.603062,"{3}": -74.065258}" , "deviceId": "Road "}
+2017-11-27 16:40:00.9349|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=220fa244-b6bc-4440-bbdc-d53b75d97e92
+2017-11-27 16:40:00.9639|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road "}
+2017-11-27 16:43:09.1980|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=c26e1cfe-726b-41e2-b539-b7858ce0393b
+2017-11-27 16:43:09.2300|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road "}
+2017-11-27 16:44:20.2681|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=12b5f6c8-52b8-4a83-bd74-6e6704728171
+2017-11-27 16:44:20.2971|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road "}
+2017-11-27 16:46:08.3627|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=0200e39b-e414-4b01-aab7-5f9172c4116d
+2017-11-27 16:46:08.3907|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-11-27 16:48:24.5285|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=1b2fc244-b126-4332-a6ad-a14931093a36
+2017-11-27 16:48:24.5565|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-11-27 16:50:24.7991|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=605f78c2-e7cb-4beb-bf34-5e6e1283ed1b
+2017-11-27 16:50:24.8271|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-11-27 17:00:51.0257|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=2a7655a3-85bd-4000-8510-aadd17cfc563
+2017-11-27 17:00:51.2376|INFO|ActivityLibrary.Activities.Step1|Step1 ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-11-27 17:01:32.1210|INFO|ActivityLibrary.Activities.Step1|Step1 StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Mon, 27 Nov 2017 22:01:17 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Tue, 28 Nov 2017 22:01:17 GMT
+}
+2017-11-27 17:01:57.7409|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,033333333333333333333333333
+2017-12-15 07:41:14.5494|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=a2af6bcd-de87-4aee-9f26-7b34dacd8de1
+2017-12-15 07:45:58.5582|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=b0a80ecf-d5b8-4138-b3a5-ac68c2d9c3cc
+2017-12-15 08:10:17.5516|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=d2a3ff4a-59d9-49b2-bbd9-7686d8efe2f7
+2017-12-15 08:10:17.5836|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 08:10:39.4104|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 08:11:08.7069|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 13:10:49 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 13:10:49 GMT
+}
+2017-12-15 08:16:23.3234|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=fdea2ab6-ddda-458b-b825-d54d8e799e97
+2017-12-15 08:16:23.3574|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 08:16:39.1688|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 08:16:45.0694|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 13:16:42 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 13:16:42 GMT
+}
+2017-12-15 08:16:59.5910|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 08:21:05.4962|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=7a4e7403-d64e-47ad-841c-5d9d948d7018
+2017-12-15 08:21:05.5262|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 08:21:10.1310|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 08:21:11.9724|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 13:21:11 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 13:21:11 GMT
+}
+2017-12-15 08:21:13.5185|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 08:23:36.5842|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=084ec648-f957-43f6-85d2-c37b40050c55
+2017-12-15 08:23:36.6132|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 08:23:41.1500|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 08:23:42.3162|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 13:23:42 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 13:23:42 GMT
+}
+2017-12-15 08:23:43.4055|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 08:23:57.3575|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,316666666666666666666666667
+2017-12-15 08:38:24.0941|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=d9744d2b-3822-4169-ad1f-c05b93a301fe
+2017-12-15 08:38:24.1241|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 08:38:24.1241|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 08:38:35.6335|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 13:38:25 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 13:38:25 GMT
+}
+2017-12-15 08:38:35.8555|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 08:38:36.1436|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,316666666666666666666666667
+2017-12-15 08:38:36.1576|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=d9744d2b-3822-4169-ad1f-c05b93a301fe Step2
+2017-12-15 08:38:36.1576|INFO|ActivityLibrary.Activities.Step2|Step2 jObject: {"payload": "{\"{0}\": 4e2867dfb0fba988bb6b98a8}" , "deviceId": "BestPlace"}
+2017-12-15 08:38:43.0805|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- init
+2017-12-15 08:38:47.3835|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4e2867dfb0fba988bb6b98a8}" , "deviceId": "BestPlace"}
+2017-12-15 08:40:17.4455|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=7311d70d-cbc4-4ce2-868f-9b35187e33aa
+2017-12-15 08:40:17.4825|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 08:40:17.4825|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 08:40:23.3787|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 13:40:18 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 13:40:18 GMT
+}
+2017-12-15 08:40:23.6017|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 08:40:23.8767|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,316666666666666666666666667
+2017-12-15 08:40:23.8897|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=7311d70d-cbc4-4ce2-868f-9b35187e33aa Step2
+2017-12-15 08:40:23.8897|INFO|ActivityLibrary.Activities.Step2|Step2 jObject: {"payload": "{\"{0}\": 4e2867dfb0fba988bb6b98a8}" , "deviceId": "BestPlace"}
+2017-12-15 08:43:27.7752|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=60d787fe-2931-4314-8924-b90e4879b4b7
+2017-12-15 08:43:27.8032|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 08:43:27.8112|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 08:43:30.4169|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 13:43:28 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 13:43:28 GMT
+}
+2017-12-15 08:43:30.6529|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 08:43:30.9319|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,316666666666666666666666667
+2017-12-15 08:43:30.9459|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=60d787fe-2931-4314-8924-b90e4879b4b7 Step2
+2017-12-15 08:43:30.9510|INFO|ActivityLibrary.Activities.Step2|Step2 jObject: {"payload": "{\"{0}\": "4e2867dfb0fba988bb6b98a8"}" , "deviceId": "BestPlace"}
+2017-12-15 08:43:49.8423|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- init
+2017-12-15 08:43:49.8623|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": "4e2867dfb0fba988bb6b98a8"}" , "deviceId": "BestPlace"}
+2017-12-15 08:46:42.4435|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=926d017c-53b0-4633-b6ad-af3f9994211b
+2017-12-15 08:46:42.4725|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 08:46:42.4805|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 08:46:46.3427|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 13:46:43 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 13:46:43 GMT
+}
+2017-12-15 08:46:46.5847|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 08:46:46.8647|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,316666666666666666666666667
+2017-12-15 08:46:46.8787|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=926d017c-53b0-4633-b6ad-af3f9994211b Step2
+2017-12-15 08:46:46.8787|INFO|ActivityLibrary.Activities.Step2|Step2 jObject: {"payload": "{\"{0}\": " +id + @"}" , "deviceId": "BestPlace"}
+2017-12-15 08:49:26.6540|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=8ccae3c4-f55e-4ef3-b475-4c03c273a982
+2017-12-15 08:49:26.6900|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 08:49:26.7030|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 08:49:29.2989|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 13:49:27 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 13:49:27 GMT
+}
+2017-12-15 08:49:29.5179|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 08:49:29.8069|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,316666666666666666666666667
+2017-12-15 08:49:29.8239|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=8ccae3c4-f55e-4ef3-b475-4c03c273a982 Step2
+2017-12-15 08:49:29.8289|INFO|ActivityLibrary.Activities.Step2|Step2 jObject: {"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "BestPlace"}
+2017-12-15 08:49:44.9097|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- init
+2017-12-15 08:49:44.9197|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "BestPlace"}
+2017-12-15 08:52:40.7278|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=dab02c23-28b2-4ef6-a87b-6a622d09ed0e
+2017-12-15 08:52:40.7588|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 08:52:40.7688|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 08:52:46.4808|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 13:52:42 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 13:52:42 GMT
+}
+2017-12-15 08:52:46.6988|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 08:52:46.9819|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,316666666666666666666666667
+2017-12-15 08:52:46.9819|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=dab02c23-28b2-4ef6-a87b-6a622d09ed0e Step2
+2017-12-15 08:52:47.0009|INFO|ActivityLibrary.Activities.Step2|Step2 jObject: {"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 08:52:51.4078|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- init
+2017-12-15 08:52:51.4078|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 08:55:56.9395|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=8f355b02-9ea7-4e14-9e1a-f0e421c56776
+2017-12-15 08:55:56.9735|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 08:55:57.0035|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 08:56:04.9313|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 13:55:58 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 13:55:58 GMT
+}
+2017-12-15 08:56:05.2153|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 08:56:05.5134|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,316666666666666666666666667
+2017-12-15 08:56:05.5274|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=8f355b02-9ea7-4e14-9e1a-f0e421c56776 Step2
+2017-12-15 08:56:05.5274|INFO|ActivityLibrary.Activities.Step2|Step2 jObject: {"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 08:56:26.8397|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- init
+2017-12-15 08:56:26.8487|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 08:56:38.0559|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode ServiceUnavailable::: StatusCode: 503, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Transfer-Encoding: chunked
+  Connection: close
+  Date: Fri, 15 Dec 2017 13:56:27 GMT
+  Content-Type: application/json; charset=UTF-8
+}
+2017-12-15 09:16:56.4796|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=6467dd1a-c86c-44da-b87e-4681b1c97427
+2017-12-15 09:16:56.5106|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 09:16:56.5196|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 09:17:02.2028|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 14:16:58 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 14:16:58 GMT
+}
+2017-12-15 09:17:02.4188|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 09:17:02.7109|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,316666666666666666666666667
+2017-12-15 09:17:02.7249|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=6467dd1a-c86c-44da-b87e-4681b1c97427 Step2
+2017-12-15 09:17:02.7249|INFO|ActivityLibrary.Activities.Step2|Step2 jObject: {"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 09:17:05.1759|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- init
+2017-12-15 09:17:10.6200|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 09:17:18.6945|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Access-Control-Allow-Origin: *
+  Tracer-Time: 54
+  X-RateLimit-Path: /v2/venues/X
+  X-RateLimit-Limit: 5000
+  X-RateLimit-Remaining: 4989
+  Strict-Transport-Security: max-age=31536000
+  X-ex: fastly_cdn
+  Connection: keep-alive
+  X-Served-By: cache-mia17620-MIA
+  X-Cache: MISS
+  X-Cache-Hits: 0
+  Vary: Accept-Encoding
+  Vary: User-Agent
+  Vary: Accept-Language
+  Accept-Ranges: bytes
+  Date: Fri, 15 Dec 2017 14:17:11 GMT
+  Server: nginx
+  Via: 1.1 varnish
+  Content-Length: 9039
+  Content-Type: application/json; charset=utf-8
+}
+2017-12-15 09:20:34.2643|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=eebafe65-4dcb-4d10-8283-111b47adb550
+2017-12-15 09:20:34.2913|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 09:20:34.3003|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 09:20:40.0694|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 14:20:35 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 14:20:35 GMT
+}
+2017-12-15 09:20:40.2774|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 09:20:40.5544|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,316666666666666666666666667
+2017-12-15 09:20:40.5704|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=eebafe65-4dcb-4d10-8283-111b47adb550 Step2
+2017-12-15 09:20:40.5754|INFO|ActivityLibrary.Activities.Step2|Step2 jObject: {"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 09:20:42.1598|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- init
+2017-12-15 09:20:42.1598|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 09:20:46.8998|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Access-Control-Allow-Origin: *
+  Tracer-Time: 45
+  X-RateLimit-Path: /v2/venues/X
+  X-RateLimit-Limit: 5000
+  X-RateLimit-Remaining: 4988
+  Strict-Transport-Security: max-age=31536000
+  X-ex: fastly_cdn
+  Connection: keep-alive
+  X-Served-By: cache-mia17623-MIA
+  X-Cache: MISS
+  X-Cache-Hits: 0
+  Vary: Accept-Encoding
+  Vary: User-Agent
+  Vary: Accept-Language
+  Accept-Ranges: bytes
+  Date: Fri, 15 Dec 2017 14:20:43 GMT
+  Server: nginx
+  Via: 1.1 varnish
+  Content-Length: 9039
+  Content-Type: application/json; charset=utf-8
+}
+2017-12-15 09:20:51.0879|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- final
+2017-12-15 09:21:02.2912|INFO|ActivityLibrary.Activities.Step2|Step2 google rating3,6
+2017-12-15 09:33:14.7852|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=40045201-2941-42ba-b79b-d13e75e9ae08
+2017-12-15 09:33:14.8132|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 09:33:14.8132|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 09:33:18.6977|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 14:33:16 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 14:33:16 GMT
+}
+2017-12-15 09:33:18.9017|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 09:33:19.1627|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,316666666666666666666666667
+2017-12-15 09:33:19.1757|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=40045201-2941-42ba-b79b-d13e75e9ae08 Step2
+2017-12-15 09:33:19.1757|INFO|ActivityLibrary.Activities.Step2|Step2 jObject: {"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 09:33:19.1757|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- init
+2017-12-15 09:33:19.1867|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 09:33:20.7432|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Access-Control-Allow-Origin: *
+  Tracer-Time: 60
+  X-RateLimit-Path: /v2/venues/X
+  X-RateLimit-Limit: 5000
+  X-RateLimit-Remaining: 4987
+  Strict-Transport-Security: max-age=31536000
+  X-ex: fastly_cdn
+  Connection: keep-alive
+  X-Served-By: cache-mia17622-MIA
+  X-Cache: MISS
+  X-Cache-Hits: 0
+  Vary: Accept-Encoding
+  Vary: User-Agent
+  Vary: Accept-Language
+  Accept-Ranges: bytes
+  Date: Fri, 15 Dec 2017 14:33:20 GMT
+  Server: nginx
+  Via: 1.1 varnish
+  Content-Length: 9039
+  Content-Type: application/json; charset=utf-8
+}
+2017-12-15 09:33:20.8732|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- final
+2017-12-15 09:33:20.9662|INFO|ActivityLibrary.Activities.Step2|Step2 google rating3,6
+2017-12-15 09:33:20.9662|INFO|ActivityLibrary.Activities.Step3|WorkflowInstanceId=40045201-2941-42ba-b79b-d13e75e9ae08 Step3
+2017-12-15 09:33:37.2746|INFO|ActivityLibrary.Activities.Step3|Step3 jObject: {"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194}" , "deviceId": "Weather"}
+2017-12-15 09:33:37.2796|INFO|ActivityLibrary.Activities.Step3|Step3 Mapper- init
+2017-12-15 09:33:37.2796|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194}" , "deviceId": "Weather"}
+2017-12-15 09:33:44.9628|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Connection: keep-alive
+  X-Cache-Key: /data/2.5/weather?lat=4.68&lon=-74.12&units=metric
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Methods: GET, POST
+  Date: Fri, 15 Dec 2017 14:33:38 GMT
+  Server: openresty
+  Content-Length: 434
+  Content-Type: application/json; charset=utf-8
+}
+2017-12-15 09:35:00.1406|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=22e652f3-8da4-4f36-8408-5702d7f6bbf2
+2017-12-15 09:35:00.1676|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 09:35:00.1757|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 09:35:03.6528|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 14:35:01 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 14:35:01 GMT
+}
+2017-12-15 09:35:03.8588|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 09:35:04.1268|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,316666666666666666666666667
+2017-12-15 09:35:04.1398|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=22e652f3-8da4-4f36-8408-5702d7f6bbf2 Step2
+2017-12-15 09:35:04.1398|INFO|ActivityLibrary.Activities.Step2|Step2 jObject: {"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 09:35:04.1398|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- init
+2017-12-15 09:35:04.1398|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 09:35:05.4554|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Access-Control-Allow-Origin: *
+  Tracer-Time: 43
+  X-RateLimit-Path: /v2/venues/X
+  X-RateLimit-Limit: 5000
+  X-RateLimit-Remaining: 4986
+  Strict-Transport-Security: max-age=31536000
+  X-ex: fastly_cdn
+  Connection: keep-alive
+  X-Served-By: cache-mia17620-MIA
+  X-Cache: MISS
+  X-Cache-Hits: 0
+  Vary: Accept-Encoding
+  Vary: User-Agent
+  Vary: Accept-Language
+  Accept-Ranges: bytes
+  Date: Fri, 15 Dec 2017 14:35:05 GMT
+  Server: nginx
+  Via: 1.1 varnish
+  Content-Length: 9039
+  Content-Type: application/json; charset=utf-8
+}
+2017-12-15 09:35:05.5914|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- final
+2017-12-15 09:35:05.6924|INFO|ActivityLibrary.Activities.Step2|Step2 google rating3,6
+2017-12-15 09:35:05.7004|INFO|ActivityLibrary.Activities.Step3|WorkflowInstanceId=22e652f3-8da4-4f36-8408-5702d7f6bbf2 Step3
+2017-12-15 09:35:08.8723|INFO|ActivityLibrary.Activities.Step3|Step3 jObject: {"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194}" , "deviceId": "Weather"}
+2017-12-15 09:35:08.8723|INFO|ActivityLibrary.Activities.Step3|Step3 Mapper- init
+2017-12-15 09:35:08.8723|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194}" , "deviceId": "Weather"}
+2017-12-15 09:35:15.3884|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Connection: keep-alive
+  X-Cache-Key: /data/2.5/weather?lat=4.68&lon=-74.12&units=metric
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Methods: GET, POST
+  Date: Fri, 15 Dec 2017 14:35:09 GMT
+  Server: openresty
+  Content-Length: 434
+  Content-Type: application/json; charset=utf-8
+}
+2017-12-15 09:39:48.2314|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=c90a89c0-eb09-4f8d-8960-852a8b53c105
+2017-12-15 09:39:48.2594|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 09:39:48.2684|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 09:39:51.4475|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 14:39:49 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 14:39:49 GMT
+}
+2017-12-15 09:39:51.6585|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 09:39:51.9345|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,316666666666666666666666667
+2017-12-15 09:39:51.9525|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=c90a89c0-eb09-4f8d-8960-852a8b53c105 Step2
+2017-12-15 09:39:51.9525|INFO|ActivityLibrary.Activities.Step2|Step2 jObject: {"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 09:39:51.9525|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- init
+2017-12-15 09:39:51.9525|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 09:39:53.1509|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Access-Control-Allow-Origin: *
+  Tracer-Time: 38
+  X-RateLimit-Path: /v2/venues/X
+  X-RateLimit-Limit: 5000
+  X-RateLimit-Remaining: 4985
+  Strict-Transport-Security: max-age=31536000
+  X-ex: fastly_cdn
+  Connection: keep-alive
+  X-Served-By: cache-mia17635-MIA
+  X-Cache: MISS
+  X-Cache-Hits: 0
+  Vary: Accept-Encoding
+  Vary: User-Agent
+  Vary: Accept-Language
+  Accept-Ranges: bytes
+  Date: Fri, 15 Dec 2017 14:39:53 GMT
+  Server: nginx
+  Via: 1.1 varnish
+  Content-Length: 9039
+  Content-Type: application/json; charset=utf-8
+}
+2017-12-15 09:39:53.2699|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- final
+2017-12-15 09:39:53.3609|INFO|ActivityLibrary.Activities.Step2|Step2 google rating3,6
+2017-12-15 09:39:53.3609|INFO|ActivityLibrary.Activities.Step3|WorkflowInstanceId=c90a89c0-eb09-4f8d-8960-852a8b53c105 Step3
+2017-12-15 09:39:56.6724|INFO|ActivityLibrary.Activities.Step3|Step3 jObject: {"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194}" , "deviceId": "Weather"}
+2017-12-15 09:39:57.9794|INFO|ActivityLibrary.Activities.Step3|Step3 Mapper- init
+2017-12-15 09:39:59.5858|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194}" , "deviceId": "Weather"}
+2017-12-15 09:40:04.1472|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Connection: keep-alive
+  X-Cache-Key: /data/2.5/weather?lat=4.68&lon=-74.12&units=metric
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Methods: GET, POST
+  Date: Fri, 15 Dec 2017 14:40:00 GMT
+  Server: openresty
+  Content-Length: 434
+  Content-Type: application/json; charset=utf-8
+}
+2017-12-15 09:40:13.0627|INFO|ActivityLibrary.Activities.Step3|Step3 Mapper- final
+2017-12-15 09:41:36.8714|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=ee4df4ab-840b-4a46-a4ee-3c718cd39bbb
+2017-12-15 09:41:36.9024|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 09:41:36.9024|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 09:41:39.5731|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 14:41:38 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 14:41:38 GMT
+}
+2017-12-15 09:41:39.7711|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 09:41:40.0421|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,316666666666666666666666667
+2017-12-15 09:41:40.0551|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=ee4df4ab-840b-4a46-a4ee-3c718cd39bbb Step2
+2017-12-15 09:41:40.0591|INFO|ActivityLibrary.Activities.Step2|Step2 jObject: {"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 09:41:40.0591|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- init
+2017-12-15 09:41:40.0591|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 09:41:41.1850|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Access-Control-Allow-Origin: *
+  Tracer-Time: 52
+  X-RateLimit-Path: /v2/venues/X
+  X-RateLimit-Limit: 5000
+  X-RateLimit-Remaining: 4984
+  Strict-Transport-Security: max-age=31536000
+  X-ex: fastly_cdn
+  Connection: keep-alive
+  X-Served-By: cache-mia17625-MIA
+  X-Cache: MISS
+  X-Cache-Hits: 0
+  Vary: Accept-Encoding
+  Vary: User-Agent
+  Vary: Accept-Language
+  Accept-Ranges: bytes
+  Date: Fri, 15 Dec 2017 14:41:41 GMT
+  Server: nginx
+  Via: 1.1 varnish
+  Content-Length: 9039
+  Content-Type: application/json; charset=utf-8
+}
+2017-12-15 09:41:41.3050|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- final
+2017-12-15 09:41:41.3950|INFO|ActivityLibrary.Activities.Step2|Step2 google rating3,6
+2017-12-15 09:41:41.3950|INFO|ActivityLibrary.Activities.Step3|WorkflowInstanceId=ee4df4ab-840b-4a46-a4ee-3c718cd39bbb Step3
+2017-12-15 09:41:42.3771|INFO|ActivityLibrary.Activities.Step3|Step3 jObject: {"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194}" , "deviceId": "Weather"}
+2017-12-15 09:41:42.3771|INFO|ActivityLibrary.Activities.Step3|Step3 Mapper- init
+2017-12-15 09:41:42.3771|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194}" , "deviceId": "Weather"}
+2017-12-15 09:41:46.2668|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Connection: keep-alive
+  X-Cache-Key: /data/2.5/weather?lat=4.68&lon=-74.12&units=metric
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Methods: GET, POST
+  Date: Fri, 15 Dec 2017 14:41:43 GMT
+  Server: openresty
+  Content-Length: 434
+  Content-Type: application/json; charset=utf-8
+}
+2017-12-15 09:41:58.3314|INFO|ActivityLibrary.Activities.Step3|Step3 Mapper- final
+2017-12-15 09:43:46.7523|INFO|ActivityLibrary.Activities.Step1|Step1 : WorkflowInstanceId=5fef2898-4f14-49e0-9068-13f22104191f
+2017-12-15 09:43:46.7823|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- init
+2017-12-15 09:43:46.7943|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194,\"{2}\": 4.603062,\"{3}\": -74.065258}" , "deviceId": "Road"}
+2017-12-15 09:43:50.1508|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
+  Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+  Vary: Accept-Language
+  Vary: Accept-Encoding
+  Transfer-Encoding: chunked
+  Transfer-Encoding: chunked
+  Accept-Ranges: none
+  Cache-Control: public, max-age=86400
+  Date: Fri, 15 Dec 2017 14:43:48 GMT
+  Server: mafe
+  Content-Type: application/json; charset=UTF-8
+  Expires: Sat, 16 Dec 2017 14:43:48 GMT
+}
+2017-12-15 09:43:50.3708|INFO|ActivityLibrary.Activities.Step1|Step1 Mapper- final
+2017-12-15 09:43:50.6348|INFO|ActivityLibrary.Activities.Step1|Step1 distance15,708, time27,316666666666666666666666667
+2017-12-15 09:43:50.6478|INFO|ActivityLibrary.Activities.Step2|WorkflowInstanceId=5fef2898-4f14-49e0-9068-13f22104191f Step2
+2017-12-15 09:43:50.6478|INFO|ActivityLibrary.Activities.Step2|Step2 jObject: {"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 09:43:50.6558|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- init
+2017-12-15 09:43:50.6558|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": \"4e2867dfb0fba988bb6b98a8\"}" , "deviceId": "Place"}
+2017-12-15 09:43:52.7066|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Access-Control-Allow-Origin: *
+  Tracer-Time: 57
+  X-RateLimit-Path: /v2/venues/X
+  X-RateLimit-Limit: 5000
+  X-RateLimit-Remaining: 4983
+  Strict-Transport-Security: max-age=31536000
+  X-ex: fastly_cdn
+  Connection: keep-alive
+  X-Served-By: cache-mia17621-MIA
+  X-Cache: MISS
+  X-Cache-Hits: 0
+  Vary: Accept-Encoding
+  Vary: User-Agent
+  Vary: Accept-Language
+  Accept-Ranges: bytes
+  Date: Fri, 15 Dec 2017 14:43:51 GMT
+  Server: nginx
+  Via: 1.1 varnish
+  Content-Length: 9039
+  Content-Type: application/json; charset=utf-8
+}
+2017-12-15 09:43:52.8326|INFO|ActivityLibrary.Activities.Step2|Step2 Mapper- final
+2017-12-15 09:43:52.9276|INFO|ActivityLibrary.Activities.Step2|Step2 google rating3,6
+2017-12-15 09:43:52.9346|INFO|ActivityLibrary.Activities.Step3|WorkflowInstanceId=5fef2898-4f14-49e0-9068-13f22104191f Step3
+2017-12-15 09:43:52.9346|INFO|ActivityLibrary.Activities.Step3|Step3 jObject: {"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194}" , "deviceId": "Weather"}
+2017-12-15 09:43:52.9346|INFO|ActivityLibrary.Activities.Step3|Step3 Mapper- init
+2017-12-15 09:43:52.9346|INFO|ActivityLibrary.Transversal.Mapper|Mapper ConsumePostAsync urlhttp://localhost:4321/zoo jObject{"payload": "{\"{0}\": 4.682487,\"{1}\":-74.120194}" , "deviceId": "Weather"}
+2017-12-15 09:43:54.4986|INFO|ActivityLibrary.Transversal.Mapper|Mapper StatusCode OK::: StatusCode: 200, ReasonPhrase: '', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Connection: keep-alive
+  X-Cache-Key: /data/2.5/weather?lat=4.68&lon=-74.12&units=metric
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Methods: GET, POST
+  Date: Fri, 15 Dec 2017 14:43:54 GMT
+  Server: openresty
+  Content-Length: 434
+  Content-Type: application/json; charset=utf-8
+}
+2017-12-15 09:43:54.5226|INFO|ActivityLibrary.Activities.Step3|Step3 Mapper- final
+2017-12-15 09:44:04.9773|INFO|ActivityLibrary.Activities.Step3|Step3 temp16

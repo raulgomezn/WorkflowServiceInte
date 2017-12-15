@@ -59,11 +59,18 @@
     <Compile Include="Activities\Step3.cs" />
     <Compile Include="Activities\Step2.cs" />
     <Compile Include="Activities\Step1.cs" />
+    <Compile Include="Entities\Apixu.cs" />
+    <Compile Include="Entities\Bing.cs" />
+    <Compile Include="Entities\Foursquare.cs" />
     <Compile Include="Entities\GettingStarted.cs" />
+    <Compile Include="Entities\GoogleMaps.cs" />
+    <Compile Include="Entities\GooglePlaces.cs" />
+    <Compile Include="Entities\Openweathermap.cs" />
     <Compile Include="Entities\ParkingEntity.cs" />
     <Compile Include="Entities\Service.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\WorkflowEntity.cs" />
+    <Compile Include="Transversal\Mapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <XamlAppDef Include="WFActivity.xaml">
@@ -74,6 +81,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
